@@ -1,0 +1,158 @@
+/*-----------------------------------------------------------------------------------
+
+	variables.less
+
+-----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Base Colors
+-----------------------------------------------------------------*/
+p {
+  margin: 10px 0 10px;
+}
+blockquote {
+  padding: 10px 20px 0px 20px;
+}
+.blockquote-reverse {
+  padding-right: 15px;
+  padding-left: 21px;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: left;
+}
+.background-aqua {
+  background: #005f9e;
+}
+.font-weight {
+  font-weight: 300;
+}
+.color-white {
+  color: #fff;
+}
+.color-di {
+  color: #005f9e;
+}
+.color-aqua {
+  color: #2fc7f7;
+}
+.color-red {
+  color: #e02325;
+}
+.list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.table thead {
+  background: #005f9e;
+  color: #fff;
+}
+a.current {
+  color: #005f9e !important;
+  font-weight: bold;
+}
+.list-group-item {
+  margin-top: 3px;
+}
+.entry h1,
+.entry h2,
+.entry h3 {
+  /*text-transform: uppercase; */
+}
+td {
+  cursor: pointer;
+  *cursor: hand;
+}
+tbody tr:hover {
+  background: #c5e8ff !important;
+}
+.banner-small ul {
+  list-style: none;
+}
+.banner-small ul li {
+  display: inline;
+  margin: 0 2px 5px 0;
+}
+.border-1line {
+  border-top: 3px dotted white;
+}
+.visibility {
+  visibility: hidden;
+}
+.underline {
+  text-decoration: underline;
+}
+#top-search ul {
+  list-style: none;
+}
+#top-search ul li {
+  display: inline !important;
+}
+@media only screen and (max-width: 991px) {
+  #top-search ul li {
+    display: inline !important;
+  }
+}
+.modal-body-scroll {
+  height: 500px;
+  overflow-y: auto;
+}
+.bg-grade {
+  background: url("../images/icon-grade.png") no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.bg-grade h3 {
+  padding: 18px;
+  line-height: 1;
+  color: #005f9e;
+}
+@media (min-height: 500px) {
+  .modal-body-scroll {
+    height: 600px;
+  }
+}
+@media (min-height: 800px) {
+  .modal-body-scroll {
+    height: 600px;
+  }
+}
+/* ----------------------------------------------------------------
+	Line Height Variables
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Margins
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Font Families
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Font Sizes
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Layouts
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Top Bar
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Portfolio
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
