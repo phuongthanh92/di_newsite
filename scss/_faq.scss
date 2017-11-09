@@ -1,0 +1,39 @@
+.list-faq {
+  margin-bottom: 20px;
+  > .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: $blueColor;
+  }
+  .item {
+    display: block;
+    color: #575757;
+    background: #e7e7e7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    a {
+      color: inherit;
+      &:hover {
+        color: $blueColor;
+        text-decoration: underline !important;
+      }
+    }
+    .item-content {
+      @include hiddenText(18px, 1.5, 2);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-faq {
+    > .title {
+      font-size: 18px;
+    }
+    .item{
+      .item-content{
+        @include hiddenText(15px, 1.5, 2);
+      }
+    }
+  }
+}

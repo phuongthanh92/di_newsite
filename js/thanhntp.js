@@ -152,4 +152,20 @@ $(document).ready(function () {
         });
     }
 
+    if ($('#pager-slider').length > 0){
+        $('#pager-slider .bxslider').bxSlider({
+            auto: false,
+            pager: false,
+            slideWidth: 50,
+            slideMargin: 20,
+            minSlides: 3,
+            maxSlides: 6,
+            infiniteLoop: false,
+            moveSlides: 1
+        });
+        $("#pager-slider ul li").click(function () {
+            $("#pager-slider ul li").removeClass('active');
+            $(this).addClass('active');
+        })
+    }
 })

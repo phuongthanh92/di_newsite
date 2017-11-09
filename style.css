@@ -3381,7 +3381,7 @@ html[xmlns] .slider-wrap {
   color: #777;
   font-size: 18px;
 }
-.breadcrumb {
+/*.breadcrumb {
   position: absolute !important;
   width: auto !important;
   top: 50% !important;
@@ -3391,7 +3391,7 @@ html[xmlns] .slider-wrap {
   background-color: transparent !important;
   padding: 0 !important;
   font-size: 12px;
-}
+}*/
 body.stretched .container-fullwidth .breadcrumb {
   right: 60px !important;
 }
