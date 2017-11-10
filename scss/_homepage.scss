@@ -8,14 +8,25 @@
   font-style: normal;
 }
 
-#content{
+@keyframes titleArrow {
+  from {
+    padding-left: 10px;
+  }
+  to {
+    padding-left: 20px;
+  }
+}
+
+
+#content {
   z-index: 1;
 }
 
-.badge{
+.badge {
   background-color: #c9302c;
 }
-#gotoTop{
+
+#gotoTop {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -69,6 +80,13 @@
     i {
       font-size: 26px;
       padding-left: 10px;
+    }
+    &:hover{
+      i{
+        animation-name: titleArrow;
+        animation-duration: 0.5s;
+        animation-iteration-count: 3;
+      }
     }
   }
   .content-part {
@@ -125,9 +143,10 @@
     width: 8px;
     height: 8px;
     border: 1px solid $blueColor;
-    background-color: #ffffff;
+    background-color: $blueColor;
     &:hover, &.active {
-      background-color: $blueColor;
+      border: 1px solid $lightBlueColor;
+      background-color: $lightBlueColor;
     }
     &:after {
       display: none;
@@ -210,7 +229,10 @@
     -ms-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
-    &:hover {
+  }
+
+  &:hover {
+    .bx-prev, .bx-next {
       opacity: 1;
     }
   }
@@ -271,9 +293,10 @@
     width: 8px;
     height: 8px;
     border: 1px solid $blueColor;
-    background-color: #ffffff;
+    background-color: $blueColor;
     &:hover, &.active {
-      background-color: $blueColor;
+      border: 1px solid $lightBlueColor;
+      background-color: $lightBlueColor;
     }
     &:after {
       display: none;
@@ -532,7 +555,7 @@
           border-radius: 50%;
         }
       }
-      .description{
+      .description {
         @include hiddenText(10px, 1.5, 3);
         padding: 0 5px;
         color: #747474;
@@ -678,19 +701,19 @@
       }
     }
   }
-  #homepage-survey-slider{
-    .bx-prev{
+  #homepage-survey-slider {
+    .bx-prev {
       left: -3px;
       background-image: url("images/homepage_newstab_prev-dark.png");
-      background-color: rgba(0,0,0,0);
+      background-color: rgba(0, 0, 0, 0);
       background-position: left center;
       display: block;
       opacity: 1;
     }
-    .bx-next{
+    .bx-next {
       right: -3px;
       background-image: url("images/homepage_newstab_next-dark.png");
-      background-color: rgba(0,0,0,0);
+      background-color: rgba(0, 0, 0, 0);
       background-position: right center;
       display: block;
       opacity: 1;
@@ -699,20 +722,29 @@
 }
 
 @keyframes nextArrow {
-  from {background-position: center center;}
-  to {background-position: right 5px center ;}
+  from {
+    background-position: center center;
+  }
+  to {
+    background-position: right 5px center;
+  }
 }
 
-.bx-next:hover{
+.bx-next:hover {
   animation-name: nextArrow;
   animation-duration: 0.5s;
   animation-iteration-count: 3;
 }
 
 @keyframes prevArrow {
-  from {background-position: center center;}
-  to {background-position: 5px center ;}
+  from {
+    background-position: center center;
+  }
+  to {
+    background-position: 5px center;
+  }
 }
+
 
 .bx-prev:hover{
   animation-name: prevArrow;
