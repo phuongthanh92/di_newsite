@@ -10917,14 +10917,17 @@ ul.tab-nav li a {
     display: block;
     padding: 0 15px;
     color: #444;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
     background-color: #b1b1b1;
     font-size: 14px;
     font-weight: bold;
     border:none;
 }
+.ui-tabs .ui-tabs-nav{
+    height: 60px;
 
+}
 ul.tab-nav li.ui-tabs-active a {
     position: relative;
     top: 1px;
@@ -10958,13 +10961,13 @@ ul.tab-nav li.ui-tabs-active a {
 -----------------------------------------------------------------*/
 .tabs.tabs-tb ul.tab-nav li.ui-tabs-active a {
     top: -1px;
-    height: 43px;
-    line-height: 38px;
+    height: 61px;
+    line-height: 56px;
     background: #f0f9ff;
 }
 
 .tabs.tabs-alt.tabs-tb ul.tab-nav li.ui-tabs-active a {
-    height: 42px;
+    height: 60px;
 }
 
 /* Tabs - Bottom Border
@@ -11020,7 +11023,7 @@ ul.tab-nav.tab-nav2 li.ui-state-active a {
 -----------------------------------------------------------------*/
 .tab-container {
     position: relative;
-    padding: 20px;
+    padding: 20px 0;
     background: #f0f9ff;
 }
 

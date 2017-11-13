@@ -33,8 +33,6 @@
     <script type="text/javascript" src="js/moment.js"></script>
     <script type="text/javascript" src="js/jquery.comiseo.daterangepicker.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
     <script type="text/javascript" src="js/jquery-canvas-sparkles.min.js"></script>
     <script type="text/javascript" src="js/thanhntp.js"></script>
@@ -226,7 +224,7 @@
 
     <section id="content">
         <div class="content-wrap">
-            <div class="page-content messages-page">
+            <div class="page-content">
                 <div class="container">
                     <div class="tabs tabs-alt tabs-tb topmargin-sm clearfix" id="tab-8">
 
@@ -234,83 +232,36 @@
                             <li><a href="#tabs-29">Inbox (1)</a></li>
                             <li><a href="#tabs-30">Sent</a></li>
                         </ul>
-                        <div class="actions-list hide-on-mobile">
-                            <a href="#" class="primary-action-button" data-toggle="modal" data-target="#feedbackModal"><i class="fa fa-pencil"></i></a>
+                        <div class="actions-list">
+                            <a href="#" class="primary-action-button"><i class="fa fa-pencil"></i></a>
                             <a href="#" class="default-action-button"><i class="fa fa-trash"></i></a>
                         </div>
                         <div class="tab-container">
-                            <div class="action-feedback on-mobile">
-                                <a href="#" class="primary-action-button pull-left" data-toggle="modal" data-target="#feedbackModal"><img src="images/icons/edit-icon-button.png"> &nbsp; Góp ý </a>
-                                <a href="#" class="default-action-button pull-right hide-none-swipe"><img src="images/icons/trash-icon.png"> &nbsp; Delete All </a>
-                                <a href="#" class="default-action-button pull-right hide-none-swipe close-swipe"><i class="fa fa-angle-left"></i> &nbsp; Back</a>
-                                <a href="#" class="default-action-button pull-right hide-swipe"><img src="images/icons/trash-icon.png"> &nbsp; Delete </a>
-                            </div>
                             <div class="tab-content clearfix" id="tabs-29">
-                                <div class="list-messages">
-                                    <div class="item-message unread">
-                                        <div class="item-wrapper">
-                                            <div class="item-select">
-                                                <div class="input-checkbox-default">
-                                                    <input type="checkbox" id="itemMessage01">
-                                                    <label for="itemMessage01"></label>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="status"></div>
-                                                <a href="#" class="title">
-                                                    Reopen invite friend function...
-                                                </a>
-                                                <div class="description">Thời gian: từ 10:00 AM 21 /08 /2017 Đến 22/08/2017 ...</div>
-                                            </div>
-                                            <div class="item-action">
-                                                <div class="time">
-                                                    10:42
-                                                </div>
-                                                <i class="fa fa-angle-right"></i>
-
-                                            </div>
-                                        </div>
-                                        <div class="item-delete">
-                                            Delete
-                                        </div>
-                                    </div>
+                                <div class="list-messages detail-message">
                                     <div class="item-message">
-                                        <div class="item-wrapper">
-                                            <div class="item-select">
-                                                <div class="input-checkbox-default">
-                                                    <input type="checkbox" id="itemMessage02">
-                                                    <label for="itemMessage02"></label>
-                                                </div>
-                                            </div>
-                                            <div class="item-info">
-                                                <div class="status"></div>
-                                                <a href="#" class="title">
-                                                    Reopen invite friend function...
-                                                </a>
-                                                <div class="description">Thời gian: từ 10:00 AM 21 /08 /2017 Đến 22/08/2017 ...</div>
-                                            </div>
-                                            <div class="item-action">
-                                                <div class="time">
-                                                    10:42
-                                                </div>
-                                                <i class="fa fa-angle-right"></i>
-
+                                        <div class="item-select">
+                                            <div class="input-checkbox-default">
+                                                <input type="checkbox" id="itemMessage01">
+                                                <label for="itemMessage01"></label>
                                             </div>
                                         </div>
-                                        <div class="item-delete">
-                                            Delete
+                                        <div class="item-info">
+                                            <div class="status"></div>
+                                            <div class="title">
+                                                Reopen invite friend function...
+                                            </div>
+                                            <div class="description">Thời gian: từ 10:00 AM 21 /08 /2017 Đến 22/08/2017 ...</div>
+                                        </div>
+                                        <div class="item-action">
+                                            <div class="time">
+                                                10:42
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+
                                         </div>
                                     </div>
                                 </div>
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination">
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                    </ul>
-                                </nav>
                             </div>
                             <div class="tab-content clearfix" id="tabs-30">
                                 <div class="table-responsive topmargin-sm">
@@ -396,46 +347,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Modal -->
-    <div class="modal fade feedback-modal" id="feedbackModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="form-feedback">
-                    <div class="title">Feedback</div>
-                    <div class="content">
-                        <form action="">
-                            <input type="text" class="form-input" placeholder="Title">
-                            <textarea type="text" rows="5" class="form-input" placeholder="Please give us your feedback"></textarea>
-                            <div class="group-buttons-default">
-                                <button type="reset" data-dismiss="modal" aria-label="Close" class="btn btn-default">Cancel</button>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#feedbackSentCompleteModal">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade feedback-modal" id="feedbackSentCompleteModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="notice-content-modal">
-                    <div class="title">
-                        Thank you!
-                    </div>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam neque velit, varius at nibh a, pretium gravida ligula. Suspendisse porttitor tincidunt ipsum in bibendum.
-                    </div>
-                    <div class="group-buttons-default">
-                        <button type="submit" class="btn btn-primary" data-dismiss="modal" aria-label="Close">OK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer
 ============================================= -->

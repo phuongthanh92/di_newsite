@@ -168,4 +168,11 @@ $(document).ready(function () {
             $(this).addClass('active');
         })
     }
+
+    $( ".tab-container" ).on( "swipeleft", function () {
+        $(this).addClass('open-delete-action');
+    } );
+    $('.close-swipe').click(function () {
+        $( ".tab-container" ).removeClass('open-delete-action')
+    })
 })
