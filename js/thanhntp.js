@@ -200,6 +200,12 @@ $(document).ready(function () {
         });
     });
 
+    /*open popup info topup card*/
+    $(".exchange-point .tab-exchange ul li").first().click(function () {
+
+        $("#topup-card-info-modal").show();
+    })
+    
     if ($("#topup-card").length > 0){
         $('#topup-card .bxslider').bxSlider({
             maxSlides: 5,

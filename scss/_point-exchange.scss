@@ -85,6 +85,10 @@
     color: #FFFFFF;
     min-height: 568px;
     padding: 68px 20px;
+    .notification-note{
+      padding: 20px;
+      font-size:18px;
+    }
     .action-feedback .primary-action-button {
       font-weight: bold;
       text-transform: capitalize;
