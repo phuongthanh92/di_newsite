@@ -27,7 +27,7 @@ $(document).ready(function () {
         $('.user-box').removeClass('open-policy-popup');
     });
 
-/*open modal confirm term*/
+    /*open modal confirm term*/
     $('#accept-term').click(function () {
         if ($('input#accept-term').is(':checked')) {
             $("#term-modal").addClass('open-modal-confirm');
@@ -38,7 +38,6 @@ $(document).ready(function () {
         $(this).closest('.modal-confirm').removeClass('open-modal-confirm');
         $("body").removeClass('body-open-modal-confirm');
     });
-
 
 
     $(function () {
@@ -97,7 +96,7 @@ $(document).ready(function () {
         }, 2000)
     })
 
-    if ($('#homepage-main-slider').length > 0){
+    if ($('#homepage-main-slider').length > 0) {
         $('#homepage-main-slider .bxslider').bxSlider({
             auto: true,
             pager: true,
@@ -109,7 +108,7 @@ $(document).ready(function () {
             $("#homepage-main-slider").removeClass('visibility');
         }, 100)
     }
-    if ($('#mobile-homepage-main-slider').length > 0){
+    if ($('#mobile-homepage-main-slider').length > 0) {
         $('#mobile-homepage-main-slider .bxslider').bxSlider({
             auto: true,
             pager: true,
@@ -118,7 +117,7 @@ $(document).ready(function () {
         });
     }
 
-    if ($('#homepage-survey-slider').length > 0){
+    if ($('#homepage-survey-slider').length > 0) {
         $('#homepage-survey-slider .bxslider').bxSlider({
             auto: true,
             pager: false,
@@ -128,7 +127,7 @@ $(document).ready(function () {
     }
 
 
-    if ($('#homepage-news-slider').length > 0){
+    if ($('#homepage-news-slider').length > 0) {
         $('#homepage-news-slider .bxslider').bxSlider({
             auto: true,
             pager: true,
@@ -142,7 +141,7 @@ $(document).ready(function () {
         });
     }
 
-    if ($('#homepage-point-slider').length > 0){
+    if ($('#homepage-point-slider').length > 0) {
         $('#homepage-point-slider .bxslider').bxSlider({
             auto: true,
             pager: true,
@@ -156,7 +155,7 @@ $(document).ready(function () {
         });
     }
 
-    if ($('#pager-slider').length > 0){
+    if ($('#pager-slider').length > 0) {
         $('#pager-slider .bxslider').bxSlider({
             auto: false,
             pager: false,
@@ -173,16 +172,16 @@ $(document).ready(function () {
         })
     }
 
-    $( ".tab-container" ).on( "swipeleft", function () {
+    $(".tab-container").on("swipeleft", function () {
         $(this).addClass('open-delete-action');
-    } );
+    });
 
-    $( ".open-swipe" ).on( "click", function () {
+    $(".open-swipe").on("click", function () {
         $('.tab-container').addClass('open-delete-action');
-    } );
+    });
 
     $('.close-swipe').click(function () {
-        $( ".tab-container" ).removeClass('open-delete-action')
+        $(".tab-container").removeClass('open-delete-action')
     })
 
     $('.list-messages.detail-message .item-message').click(function () {
@@ -190,14 +189,38 @@ $(document).ready(function () {
     })
 
     $('.count').each(function () {
-        $(this).prop('Counter',0).animate({
+        $(this).prop('Counter', 0).animate({
             Counter: $(this).text()
         }, {
-            duration: 4000,
+            duration: 1500,
             easing: 'swing',
             step: function (now) {
                 $(this).text(Math.ceil(now));
             }
         });
     });
+
+    if ($("#topup-card").length > 0){
+        $('#topup-card .bxslider').bxSlider({
+            maxSlides: 5,
+            minSlides: 3,
+            moveSlides: 1,
+            slideWidth: 252,
+            slideMargin: 10,
+            controls: false,
+            pager: false,
+            onSliderLoad: function () {
+                $('#topup-card .bxslider>div:not(.bx-clone)').eq(1).addClass('active-slide');
+            },
+            onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+                $('#topup-card .bxslider li').removeClass('active-slide');
+                $($slideElement).next().addClass('active-slide');
+            }
+        })
+
+        $("#topup-card .bxslider li").click(function () {
+            $("#topup-card .bxslider li").removeClass('selected-card');
+            $(this).addClass('selected-card');
+        })
+    }
 })

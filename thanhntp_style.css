@@ -3659,5 +3659,103 @@ html {
 
   .ui-tabs .ui-tabs-panel {
     padding: 5px; } }
+.exchange-point {
+  background: #005f9e;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px; }
+  .exchange-point:after {
+    position: absolute;
+    height: 81px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    content: "";
+    background: #005f9e; }
+
+.point-number {
+  text-align: center;
+  margin-bottom: -90px;
+  position: relative;
+  z-index: 2; }
+  .point-number .title {
+    font-size: 24px;
+    color: #005f9e;
+    margin-bottom: 10px; }
+  .point-number .point {
+    margin-bottom: 8px; }
+    .point-number .point .count {
+      display: inline-block;
+      width: 60px;
+      height: 90px;
+      text-align: center;
+      line-height: 90px;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+      background: #e6e6e6;
+      border-radius: 5px;
+      margin: 0 4px;
+      font-size: 80px;
+      font-weight: bold;
+      text-shadow: 0 3px 1px rgba(0, 0, 0, 0.89);
+      /*background: -webkit-linear-gradient(top, $blueColor, $lightBlueColor);
+      background: linear-gradient(top, $blueColor, $lightBlueColor);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+      color: #005f9e; }
+  .point-number .note {
+    color: #5bbdff; }
+    .point-number .note .light-text {
+      color: #FFFFFF; }
+
+.tab-exchange .nav-tabs {
+  border: none; }
+  .tab-exchange .nav-tabs > li > a {
+    font-size: 18px;
+    font-weight: bold;
+    background: #FFFFFF;
+    color: #7d7d7d;
+    line-height: 58px;
+    min-width: 178px;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    border: none !important; }
+  .tab-exchange .nav-tabs > li.active, .tab-exchange .nav-tabs > li:hover {
+    margin: 0; }
+    .tab-exchange .nav-tabs > li.active a, .tab-exchange .nav-tabs > li:hover a {
+      background-color: #4c9cd1;
+      color: #FFFFFF; }
+.tab-exchange .tab-content {
+  background: #4c9cd1;
+  color: #FFFFFF;
+  min-height: 568px;
+  padding: 68px 20px; }
+  .tab-exchange .tab-content .action-feedback .primary-action-button {
+    font-weight: bold;
+    text-transform: capitalize;
+    display: inline-block; }
+
+#topup-card {
+  margin-bottom: 113px; }
+  #topup-card li {
+    cursor: pointer;
+    border: 5px solid transparent; }
+    #topup-card li .status:after {
+      content: "\f058";
+      font-family: FontAwesome;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 36px;
+      color: transparent;
+      line-height: 0.9; }
+    #topup-card li.selected-card {
+      border: 5px solid #fff007;
+      border-radius: 5px; }
+      #topup-card li.selected-card .status:after {
+        color: #fff007; }
+  #topup-card .active-slide {
+    opacity: 0; }
 
 /*# sourceMappingURL=thanhntp_style.css.map */
