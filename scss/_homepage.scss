@@ -130,9 +130,17 @@
   }
 }
 
+.fade.in{
+  animation-name: opacity;
+  animation-duration: 0.4s;
+}
+
 #homepage-main-slider {
   padding-bottom: 40px;
   margin-top: -10px;
+  .bx-viewport{
+    max-height: 344px;
+  }
   .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     position: absolute;
     bottom: -30px;
