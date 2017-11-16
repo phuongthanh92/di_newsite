@@ -1,0 +1,126 @@
+.exchange-point {
+  background: $blueColor;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  &:after {
+    position: absolute;
+    height: 81px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    content: "";
+    background: $blueColor;
+  }
+}
+
+.point-number {
+  text-align: center;
+  margin-bottom: -90px;
+  position: relative;
+  z-index: 2;
+  .title {
+    font-size: 24px;
+    color: $blueColor;
+    margin-bottom: 10px;
+  }
+  .point {
+    margin-bottom: 8px;
+    .count {
+      display: inline-block;
+      width: 60px;
+      height: 90px;
+      text-align: center;
+      line-height: 90px;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+      background: #e6e6e6;
+      border-radius: 5px;
+      margin: 0 4px;
+      font-size: 80px;
+      font-weight: bold;
+      text-shadow: 0 3px 1px rgba(0, 0, 0, 0.89);
+      /*background: -webkit-linear-gradient(top, $blueColor, $lightBlueColor);
+      background: linear-gradient(top, $blueColor, $lightBlueColor);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+      color: $blueColor;
+    }
+  }
+  .note {
+    color: #5bbdff;
+    .light-text {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.tab-exchange {
+  .nav-tabs {
+    border: none;
+    > li {
+      > a {
+        font-size: 18px;
+        font-weight: bold;
+        background: #FFFFFF;
+        color: #7d7d7d;
+        line-height: 58px;
+        min-width: 178px;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        border: none !important;
+      }
+      &.active, &:hover {
+        margin: 0;
+        a {
+          background-color: #4c9cd1;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  .tab-content {
+    background: #4c9cd1;
+    color: #FFFFFF;
+    min-height: 568px;
+    padding: 68px 20px;
+    .notification-note{
+      padding: 20px;
+      font-size:18px;
+    }
+    .action-feedback .primary-action-button {
+      font-weight: bold;
+      text-transform: capitalize;
+      display: inline-block;
+    }
+  }
+}
+
+#topup-card {
+  margin-bottom: 113px;
+  li {
+    cursor: pointer;
+    border: 5px solid transparent;
+    .status:after {
+      content: "\f058";
+      font-family: FontAwesome;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 36px;
+      color: transparent;
+      line-height: 0.9;
+    }
+    &.selected-card {
+      border: 5px solid #fff007;
+      border-radius: 5px;
+      .status:after {
+        color: #fff007;
+      }
+    }
+  }
+  .active-slide{
+    opacity: 0;
+  }
+}

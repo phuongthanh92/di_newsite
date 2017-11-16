@@ -1,3 +1,42 @@
+.messages-page {
+  .btn-gradient {
+    -webkit-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.5);
+    background: url("images/btn-gradient.png") no-repeat center;
+    background-size: cover;
+    color: #FFFFFF !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+    height: 60px;
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      height: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 9px;
+      text-transform: capitalize;
+    }
+  }
+
+}
+
+.padding {
+  padding: 10px;
+}
+
 .tabs-alt {
   .actions-list {
     position: absolute;
@@ -25,11 +64,21 @@
       }
     }
   }
+  .list-messages {
+    min-height: 340px;
+  }
 }
 
 .action-feedback {
   padding: 0 5px 10px;
-  overflow: hidden;
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
   a {
     padding: 0 15px;
     margin: 0 5px;
@@ -43,9 +92,20 @@
     background-color: #e9e9e9;
     font-size: 11px;
     color: #6f6f6f !important;
-    font-weight:300;
+    font-weight: 300;
     img {
       height: 16px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    a {
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      color: #4b4b4b;
+      text-transform: uppercase;
     }
   }
 }
@@ -66,6 +126,9 @@
       display: flex;
       margin-bottom: 4px;
     }
+    .item-content {
+      width: 100%;
+    }
     .item-delete {
       width: 70px;
       height: 70px;
@@ -80,6 +143,8 @@
       position: absolute;
       top: 0;
       left: 100%;
+      opacity: 0;
+      transition: opacity 0.5s;
     }
     .item-select {
       width: 40px;
@@ -89,6 +154,8 @@
     .item-action {
       width: 120px;
       text-align: right;
+      font-weight: 300;
+      font-size: 16px;
     }
     .item-info {
       width: calc(100% - 160px);
@@ -116,8 +183,24 @@
         white-space: nowrap;
         line-height: 1.4;
         height: 1.4em;
+        max-height: 1.4em;
         overflow: hidden;
         text-overflow: ellipsis;
+        transition: max-height 1.5s;
+      }
+    }
+    &.item-feedback-msm, &.item-message-open {
+      .item-info {
+        .description, .title {
+          white-space: normal;
+          height: auto;
+          max-height: 1000px;
+        }
+      }
+      .item-action {
+        i {
+          transform: rotate(180deg);
+        }
       }
     }
     .item-select, .item-action, .item-info {
@@ -149,7 +232,7 @@
         display: none;
       }
       .item-info {
-        width: calc(100% - 80px);
+        width: calc(100% - 60px);
         .status {
           width: 6px;
           height: 6px;
@@ -157,27 +240,41 @@
           top: 24px;
         }
       }
+      .item-action {
+        width: 60px;
+        padding-left: 0;
+      }
       .item-select, .item-action, .item-info {
         padding: 20px 10px;
+        font-size: 12px;
       }
     }
   }
-
+  &.detail-message {
+    .item-message {
+      .item-wrapper {
+        background: #FFFFFF;
+      }
+    }
+  }
 }
 
-.hide-none-swipe{
+.hide-none-swipe {
   display: none;
 }
 
-.open-delete-action{
-  .list-messages{
+.open-delete-action {
+  .list-messages {
     transform: translateX(-90px);
   }
-  .hide-none-swipe{
+  .hide-none-swipe {
     display: block;
   }
-  .hide-swipe{
+  .hide-swipe {
     display: none;
+  }
+  .item-delete {
+    opacity: 1 !important;
   }
 }
 
@@ -209,6 +306,7 @@
 }
 
 .feedback-modal {
+  font-family: "Open Sans", sans-serif;
   .modal-dialog {
     border-radius: 10px;
     overflow: hidden;
