@@ -250,10 +250,34 @@
                     <div class="container">
                         <div class="tab-exchange">
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab"
-                                                                          data-toggle="tab">Topup Card</a></li>
+                                <li role="presentation" class="active">
+                                    <a href="#tab1" aria-controls="tab1" role="tab"
+                                                                          data-toggle="tab">Topup Card <i class="fa fa-info-circle"></i> </a>
+                                    <div class="info-detail-popover">
+                                        <div class="title">Infomation</div>
+                                        <div class="content">
+                                            Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
+
+                                            Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
+
+                                            Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab"
-                                                           data-toggle="tab">Cash</a></li>
+                                                           data-toggle="tab">Cash <i class="fa fa-info-circle"></i></a>
+                                    <div class="info-detail-popover">
+                                        <div class="title">Infomation</div>
+                                        <div class="content">
+                                            Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
+
+                                            Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
+
+                                            Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
+                                        </div>
+                                    </div>
+                                </li>
+
                                 <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab"
                                                            data-toggle="tab">Other</a></li>
                             </ul>
@@ -261,27 +285,101 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="tab1">
-                                    <div id="topup-card">
-                                        <ul class="bxslider">
-                                            <li>
-                                                <img src="./images/topup-card-01.png" alt="">
-                                                <div class="status"></div>
-                                            </li>
-                                            <li>
-                                                <img src="./images/topup-card-02.png" alt="">
-                                                <div class="status"></div>
-                                            </li>
-                                            <li>
-                                                <img src="./images/topup-card-03.png" alt="">
-                                                <div class="status"></div>
-                                            </li>
-                                        </ul>
+                                    <div class="step active" id="step3">
+                                        <div id="topup-card">
+                                            <ul class="bxslider">
+                                                <li>
+                                                    <img src="./images/topup-card-01.png" alt="">
+                                                    <div class="status"></div>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/topup-card-02.png" alt="">
+                                                    <div class="status"></div>
+                                                </li>
+                                                <li>
+                                                    <img src="./images/topup-card-03.png" alt="">
+                                                    <div class="status"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="on-mobile text-center">You choose the card in <span class="text-warning">Mobiphone</span></div>
+                                        <div class="action-feedback text-center">
+                                            <a href="#" class="primary-action-button" id="continue-change-topupcard">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                        </div>
                                     </div>
-                                    <div class="action-feedback text-center">
-                                        <a href="#" class="primary-action-button" data-toggle="modal" data-target="#feedbackModal">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                    <div class="step" id="step4">
+                                        <div class="cash-change-value">
+                                            <div class="type-cash">
+                                                <div><img src="images/cash-change-02.jpg" alt=""></div>
+                                                <div>
+                                                    60,000 p = 60,000 VND
+                                                </div>
+                                            </div>
+                                            <ul class="list-value">
+                                                <li><span>20,000 VND</span><i class="fa fa-check-circle"></i> </li>
+                                                <li><span>40,000 VND</span><i class="fa fa-check-circle"></i> </li>
+                                                <li class="active"><span>60,000 VND</span><i class="fa fa-check-circle"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="action-feedback text-center">
+                                            <a href="#" class="primary-action-button" data-toggle="modal" data-target="#topup-card-complete-modal">Exchange &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="tab2">...</div>
+                                <div role="tabpanel" class="tab-pane" id="tab2">
+
+                                    <div class="step active" id="step1">
+                                        <div id="cash-change">
+                                            <ul>
+                                                <li>
+                                                    <div class="wrapper">
+                                                        <img src="./images/cash-change-01.jpg" alt="">
+                                                        <div class="status"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="wrapper">
+                                                        <img src="./images/cash-change-02.jpg" alt="">
+                                                        <div class="status"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="wrapper">
+                                                        <img src="./images/cash-change-03.jpg" alt="">
+                                                        <div class="status"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="wrapper">
+                                                        <img src="./images/cash-change-04.jpg" alt="">
+                                                        <div class="status"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="action-feedback text-center">
+                                            <a href="#" class="primary-action-button" id="continue-change-cash">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="step" id="step2">
+                                        <div class="cash-change-value">
+                                            <div class="type-cash">
+                                                <div><img src="images/cash-change-02.jpg" alt=""></div>
+                                                <div>
+                                                    60,000 p = 60,000 VND
+                                                </div>
+                                            </div>
+                                            <ul class="list-value">
+                                                <li><span>20,000 VND</span><i class="fa fa-check-circle"></i> </li>
+                                                <li ><span>40,000 VND</span><i class="fa fa-check-circle"></i> </li>
+                                                <li  data-toggle="modal" data-target="#topup-card-error-modal" class="active"><span>60,000 VND</span><i class="fa fa-check-circle"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="action-feedback text-center">
+                                            <a href="#" class="primary-action-button" disabled="disabled" data-toggle="modal" data-target="#topup-card-error-modal" >Exchange &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="tab3">
                                     <div class="text-center">
                                         <img src="images/comming-soon.png" alt="">
@@ -298,19 +396,60 @@
         </div>
     </section>
 
-    <div class="modal-confirm" id="topup-card-info-modal">
-        <div class="modal-confirm-wrapper">
+    <div class="modal fade" id="topup-card-info-modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content regular-confirm-modal">
+                <div class="title">Infomation</div>
+                <div class="content text-center">
+                    Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
 
-            <div class="title">Information</div>
-            <div class="content">
-                Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
+                    Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
 
-                Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
-
-                Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
+                    Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
+                    <br>
+                </div>
+                <div class="bottom">
+                    <button class="confirm-btn confirm-accept">OK</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="topup-card-complete-modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content regular-confirm-modal">
+                <div class="title">Congratulation!</div>
+                <div class="content text-center">
+                    Voucher will be sent to <span class="text-primary">your email</span><br><br>
+
+                    (This request might be processed within <span class="text-primary">xx days</span>)<br><br><br>
+                </div>
+                <div class="bottom">
+                    <button class="confirm-btn confirm-accept" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="topup-card-error-modal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content regular-confirm-modal">
+                <img src="images/topup-card-error.png" alt="" class="men-background">
+                <div class="title">Oops! sorry!</div>
+                <div class="content text-center">
+                    You don’t have enough point to exchange.<br><br>
+                    You have to collect <span class="text-primary">xxxx points</span> at least to exchange your point.<br><br>
+
+                    Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
+                    <br>
+                </div>
+                <div class="bottom">
+                    <button class="confirm-btn confirm-accept" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer
 ============================================= -->
     <footer id="footer" class="dark">

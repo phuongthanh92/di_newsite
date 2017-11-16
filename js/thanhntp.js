@@ -112,16 +112,15 @@ $(document).ready(function () {
         $('#mobile-homepage-main-slider .bxslider').bxSlider({
             auto: true,
             pager: true,
-            speed: 400,
+            speed: 200,
             autoHover: true
         });
     }
 
     if ($('#homepage-survey-slider').length > 0) {
         $('#homepage-survey-slider .bxslider').bxSlider({
-            auto: true,
+            auto: false,
             pager: false,
-            speed: 400,
             autoHover: true
         });
     }
@@ -201,12 +200,12 @@ $(document).ready(function () {
     });
 
     /*open popup info topup card*/
-    $(".exchange-point .tab-exchange ul li").first().click(function () {
+    /*$(".exchange-point .tab-exchange ul li").first().click(function () {
 
-        $("#topup-card-info-modal").show();
-    })
-    
-    if ($("#topup-card").length > 0){
+     $("#topup-card-info-modal").show();
+     })*/
+
+    if ($("#topup-card").length > 0) {
         $('#topup-card .bxslider').bxSlider({
             maxSlides: 5,
             minSlides: 3,
@@ -216,7 +215,7 @@ $(document).ready(function () {
             controls: false,
             pager: false,
             onSliderLoad: function () {
-                $('#topup-card .bxslider>div:not(.bx-clone)').eq(1).addClass('active-slide');
+                $('#topup-card .bxslider>li:not(.bx-clone)').eq(1).addClass('active-slide');
             },
             onSlideAfter: function ($slideElement, oldIndex, newIndex) {
                 $('#topup-card .bxslider li').removeClass('active-slide');
@@ -229,4 +228,24 @@ $(document).ready(function () {
             $(this).addClass('selected-card');
         })
     }
+    $("#cash-change ul li").click(function () {
+        $("#cash-change ul li").removeClass('selected-card');
+        $(this).addClass('selected-card');
+    })
+
+
+    $('.list-value li').click(function () {
+        $('.list-value li').removeClass('active');
+        $(this).addClass('active');
+    })
+
+    $('#continue-change-cash').click(function () {
+        $("#step1").removeClass('active');
+        $("#step2").addClass('active');
+    })
+
+    $("#continue-change-topupcard").click(function () {
+        $("#step3").removeClass('active');
+        $("#step4").addClass('active');
+    })
 })
