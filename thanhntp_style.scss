@@ -2438,7 +2438,7 @@ html {
 .error {
   color: $redColor;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 300;
   &.text-right {
     text-align: right !important;
   }
@@ -2980,3 +2980,4 @@ html {
 @import "scss/faq";
 @import "scss/message";
 @import "scss/point-exchange";
+@import "scss/profile";

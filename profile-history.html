@@ -227,169 +227,206 @@
 
     <section id="content">
         <div class="content-wrap">
-            <div class="page-content point-exchange-page">
-                <div class="container">
-                    <div class="point-number">
-                        <div class="title">Your points:</div>
-                        <div class="point">
-                            <span class="count">0</span>
-                            <span class="count">0</span>
-                            <span class="count">6</span>
-                            <span class="count">3</span>
-                            <span class="count">2</span>
-                            <span class="count">7</span>
-                            <span class="count">8</span>
-                        </div>
-                        <div class="note text-center">
-                            (62,457 point = <strong class="light-text">62,457 VNĐ</strong>)<br>
-                            Date expired <span class="light-text">31/12/2017</span>
-                        </div>
-                    </div>
+            <div class="page-content invite-friends-page">
+                <div class="title-page text-center">
+                    My History
                 </div>
-                <div class="exchange-point">
-                    <div class="container">
-                        <div class="tab-exchange" id="tab-exchange">
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active can-open-popover">
-                                    <a href="#tab1" aria-controls="tab1" role="tab"
-                                                                          data-toggle="tab">Topup Card <i class="fa fa-info-circle"></i> </a>
-                                    <div class="cover on-mobile" data-toggle="modal" data-target="#tab-exchange-info-modal"></div>
-                                    <div class="info-detail-popover">
-                                        <div class="title">Infomation</div>
-                                        <div class="content">
-                                            Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
+                <div class="container">
+                    <div class="tab-history">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#tab1" aria-controls="tab1" role="tab"
+                                   data-toggle="tab">Received </a>
+                            </li>
+                            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab"
+                                                       data-toggle="tab">Exchanged</a>
+                            </li>
 
-                                            Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
+                        </ul>
 
-                                            Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab1">
+                                <div class="wrapper-pane">
+                                    <div class="top-actions">
+                                        <div class="current-point on-desktop">
+                                            <span class="label">Current Point:</span>
+                                            <span class="point">66,777,000</span>
+                                        </div>
+                                        <div class="action-feedback text-right">
+                                            <a href="#" class="primary-action-button text-primary">Point Echange</a>
+                                            <a href="#" class="primary-action-button text-primary">Survey Now</a>
                                         </div>
                                     </div>
-                                </li>
-                                <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab"
-                                                           data-toggle="tab">Cash <i class="fa fa-info-circle"></i></a>
-                                    <div class="cover on-mobile" data-toggle="modal" data-target="#tab-exchange-info-modal"></div>
-                                    <div class="info-detail-popover">
-                                        <div class="title">Infomation</div>
-                                        <div class="content">
-                                            Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
-
-                                            Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
-
-                                            Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab"
-                                                           data-toggle="tab">Other</a></li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="tab1">
-                                    <div class="wrapper-step">
-                                        <div class="step active" id="step3">
-                                            <div id="topup-card">
-                                                <ul class="bxslider">
-                                                    <li>
-                                                        <img src="./images/topup-card-01.png" alt="">
-                                                        <div class="status"></div>
-                                                    </li>
-                                                    <li>
-                                                        <img src="./images/topup-card-02.png" alt="">
-                                                        <div class="status"></div>
-                                                    </li>
-                                                    <li>
-                                                        <img src="./images/topup-card-03.png" alt="">
-                                                        <div class="status"></div>
-                                                    </li>
-                                                </ul>
+                                    <div class="list-received">
+                                        <div class="item item-daily">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
                                             </div>
-                                            <div class="on-mobile text-center">You choose the card in <span class="text-warning">Mobiphone</span></div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" id="continue-change-topupcard">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                            <div class="action action-feedback">
+                                                <a href="#" class="primary-action-button text-primary">Claim gift</a>
                                             </div>
                                         </div>
-                                        <div class="step" id="step4">
-                                            <div class="cash-change-value">
-                                                <div class="type-cash">
-                                                    <div><img src="images/cash-change-02.jpg" alt=""></div>
-                                                    <div>
-                                                        60,000 p = 60,000 VND
-                                                    </div>
-                                                </div>
-                                                <ul class="list-value">
-                                                    <li><span>20,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li><span>40,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li><span>60,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                </ul>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
                                             </div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" data-toggle="modal" data-target="#topup-card-complete-modal">Exchange &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                            <div class="action action-feedback">
+                                                <div class="point positive-point">+22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login Daily reward for login Daily reward for login </div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="tab2">
-                                    <div class="wrapper-step">
-                                        <div class="step active" id="step1">
-                                            <div id="cash-change">
-                                                <ul>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-01.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-02.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-03.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-04.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" id="continue-change-cash">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
-                                            </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab2">
+                                <div class="wrapper-pane">
+                                    <div class="top-actions">
+                                        <div class="action-feedback text-right">
+                                            <a href="#" class="primary-action-button text-primary">Point Echange</a>
+                                            <a href="#" class="primary-action-button text-primary">Survey Now</a>
                                         </div>
-                                        <div class="step" id="step2">
-                                            <div class="cash-change-value">
-                                                <div class="type-cash">
-                                                    <div><img src="images/cash-change-02.jpg" alt=""></div>
-                                                    <div>
-                                                        60,000 p = 60,000 VND
-                                                    </div>
-                                                </div>
-                                                <ul class="list-value">
-                                                    <li><span>20,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li ><span>40,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li  data-toggle="modal" data-target="#topup-card-error-modal" class="active"><span>60,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                </ul>
-                                            </div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" data-toggle="modal" data-target="#topup-card-error-modal" >Exchange &nbsp;<i class="fa fa-arrow-right"></i></a>
-                                            </div>
+                                        <div class="guide-line">
+                                            <span><i class="text-success fa fa-check-circle-o"></i> &nbsp; Success</span>
+                                            <span><i class="text-primary fa fa-clock-o"></i> &nbsp; Pending</span>
                                         </div>
                                     </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="tab3">
-                                    <div class="text-center">
-                                        <img src="images/comming-soon.png" alt="">
-                                        <div class="notification-note">
-                                            This function is coming soon
+                                    <div class="list-received">
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-clock-o text-primary"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point positive-point">+22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="info">
+                                                <div class="content">Daily reward for login</div>
+                                                <div class="time">22 Aug 2017</div>
+                                            </div>
+                                            <div class="status">
+                                                <i class="fa fa-check-circle-o text-success"></i>
+                                            </div>
+                                            <div class="action action-feedback">
+                                                <div class="point negative-point">-22,000</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -401,11 +438,10 @@
         </div>
     </section>
 
-    <div class="modal fade" id="tab-exchange-info-modal" tabindex="-1" role="dialog" >
+    <div class="modal fade" id="topup-card-info-modal" tabindex="-1" role="dialog" >
         <div class="modal-dialog" role="document">
             <div class="modal-content regular-confirm-modal">
-                <div class="title">Infomation</div>
-                <div class="content text-center">
+                <div class="content text-center full-content">
                     Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
 
                     Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
@@ -415,6 +451,7 @@
                 </div>
                 <div class="bottom">
                     <button class="confirm-btn confirm-accept" data-dismiss="modal">OK</button>
+
                 </div>
             </div>
         </div>

@@ -227,172 +227,286 @@
 
     <section id="content">
         <div class="content-wrap">
-            <div class="page-content point-exchange-page">
-                <div class="container">
-                    <div class="point-number">
-                        <div class="title">Your points:</div>
-                        <div class="point">
-                            <span class="count">0</span>
-                            <span class="count">0</span>
-                            <span class="count">6</span>
-                            <span class="count">3</span>
-                            <span class="count">2</span>
-                            <span class="count">7</span>
-                            <span class="count">8</span>
-                        </div>
-                        <div class="note text-center">
-                            (62,457 point = <strong class="light-text">62,457 VNĐ</strong>)<br>
-                            Date expired <span class="light-text">31/12/2017</span>
-                        </div>
-                    </div>
+            <div class="page-content invite-friends-page">
+                <div class="title-page text-center">
+                    invite friend
                 </div>
-                <div class="exchange-point">
-                    <div class="container">
-                        <div class="tab-exchange" id="tab-exchange">
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active can-open-popover">
-                                    <a href="#tab1" aria-controls="tab1" role="tab"
-                                                                          data-toggle="tab">Topup Card <i class="fa fa-info-circle"></i> </a>
-                                    <div class="cover on-mobile" data-toggle="modal" data-target="#tab-exchange-info-modal"></div>
-                                    <div class="info-detail-popover">
-                                        <div class="title">Infomation</div>
-                                        <div class="content">
-                                            Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
+                <div class="container">
+                    <div class="tab-invite">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#tab1" aria-controls="tab1" role="tab"
+                                   data-toggle="tab"><span class="image-title img-facebook"></span> <i class="fa fa-info-circle"></i> </a>
+                                <div class="cover" data-toggle="modal" data-target="#topup-card-info-modal"></div>
+                            </li>
+                            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab"
+                                                       data-toggle="tab"><span class="image-title img-line"></span> <i class="fa fa-info-circle"></i></a>
+                                <div class="cover" data-toggle="modal" data-target="#topup-card-info-modal"></div>
+                            </li>
 
-                                            Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
+                            <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab"
+                                                       data-toggle="tab"><span class="image-title img-email"></span> <i class="fa fa-info-circle"></i></a>
+                                <div class="cover" data-toggle="modal" data-target="#topup-card-info-modal"></div>
+                            </li>
+                        </ul>
 
-                                            Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
-                                        </div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab1">
+                                <div id="invite-facebook">
+                                    <div class="search-box">
+                                        <form action="">
+                                            <input type="text" placeholder="Search Friends">
+                                            <button type="submit"><i class="fa fa-search"></i> </button>
+                                        </form>
                                     </div>
-                                </li>
-                                <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab"
-                                                           data-toggle="tab">Cash <i class="fa fa-info-circle"></i></a>
-                                    <div class="cover on-mobile" data-toggle="modal" data-target="#tab-exchange-info-modal"></div>
-                                    <div class="info-detail-popover">
-                                        <div class="title">Infomation</div>
-                                        <div class="content">
-                                            Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
-
-                                            Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
-
-                                            Sed pulvinar erat non ornare auctor. Donec in purus sed eros egestas lobortis commodo ac magna. Integer non nunc ut purus faucibus efficitur.<br><br>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab"
-                                                           data-toggle="tab">Other</a></li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="tab1">
-                                    <div class="wrapper-step">
-                                        <div class="step active" id="step3">
-                                            <div id="topup-card">
-                                                <ul class="bxslider">
-                                                    <li>
-                                                        <img src="./images/topup-card-01.png" alt="">
-                                                        <div class="status"></div>
-                                                    </li>
-                                                    <li>
-                                                        <img src="./images/topup-card-02.png" alt="">
-                                                        <div class="status"></div>
-                                                    </li>
-                                                    <li>
-                                                        <img src="./images/topup-card-03.png" alt="">
-                                                        <div class="status"></div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="on-mobile text-center">You choose the card in <span class="text-warning">Mobiphone</span></div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" id="continue-change-topupcard">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="step" id="step4">
-                                            <div class="cash-change-value">
-                                                <div class="type-cash">
-                                                    <div><img src="images/cash-change-02.jpg" alt=""></div>
-                                                    <div>
-                                                        60,000 p = 60,000 VND
-                                                    </div>
+                                    <div class="list list-invite-facebook clearfix">
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action invited">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
                                                 </div>
-                                                <ul class="list-value">
-                                                    <li><span>20,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li><span>40,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li><span>60,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                </ul>
-                                            </div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" data-toggle="modal" data-target="#topup-card-complete-modal">Exchange &nbsp;<i class="fa fa-arrow-right"></i></a>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="tab2">
-                                    <div class="wrapper-step">
-                                        <div class="step active" id="step1">
-                                            <div id="cash-change">
-                                                <ul>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-01.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-02.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-03.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="wrapper">
-                                                            <img src="./images/cash-change-04.jpg" alt="">
-                                                            <div class="status"></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" id="continue-change-cash">Continue &nbsp;<i class="fa fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="step" id="step2">
-                                            <div class="cash-change-value">
-                                                <div class="type-cash">
-                                                    <div><img src="images/cash-change-02.jpg" alt=""></div>
-                                                    <div>
-                                                        60,000 p = 60,000 VND
-                                                    </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
                                                 </div>
-                                                <ul class="list-value">
-                                                    <li><span>20,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li ><span>40,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                    <li  data-toggle="modal" data-target="#topup-card-error-modal" class="active"><span>60,000 VND</span><i class="fa fa-check-circle"></i> </li>
-                                                </ul>
                                             </div>
-                                            <div class="action-feedback text-center">
-                                                <a href="#" class="primary-action-button disabled" data-toggle="modal" data-target="#topup-card-error-modal" >Exchange &nbsp;<i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-wrapper">
+                                                <a href="#" class="icon-type-invite icon-invite-facebook"></a>
+                                                <a href="#" class="name">Jason Nguyen</a>
+                                                <div class="action">
+                                                    <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-feedback text-center">
+                                        <a href="#" class="primary-action-button text-primary">Invite all</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab2">
+                                <div class="list list-invite-facebook clearfix">
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action invited">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-wrapper">
+                                            <a href="#" class="icon-type-invite icon-invite-line"></a>
+                                            <a href="#" class="name">Jason Nguyen</a>
+                                            <div class="action">
+                                                <a href="#" class="btn btn-gradient btn-sm" data-toggle="modal" data-target="#topup-card-info-modal"><i class="fa fa-share"></i> &nbsp; Invite</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane" id="tab3">
-                                    <div class="text-center">
-                                        <img src="images/comming-soon.png" alt="">
-                                        <div class="notification-note">
-                                            This function is coming soon
+                                <div class="action-feedback text-center">
+                                    <a href="#" class="primary-action-button text-primary">Invite all</a>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab3">
+                                <div class="invite-by-mail text-center">
+                                    <p>Share this link with your friends to get the special gifts</p>
+                                    <div class="email-invite-box">
+                                        <div class="link">
+                                            <a href="#" id="linkEmail">https:// ...</a>
+                                            <div class="error">Link has been copied, please send it to your friends</div>
+                                        </div>
+                                        <div class="action">
+                                            <button class="btn btn-gradient" onclick="copyToClipboard('linkEmail')">Copy link</button>
                                         </div>
                                     </div>
+                                    <p>or send email to your friends</p>
+                                    <div class="list-email">
+                                        <div class="item">
+                                            <input type="text" class="form-control" placeholder="YourFriend@email.com">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text" class="form-control" placeholder="...">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text" class="form-control" placeholder="...">
+                                        </div>
+                                    </div>
+                                    <div class="action-feedback text-center">
+                                        <a href="#" class="primary-action-button text-primary">Send</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -401,11 +515,10 @@
         </div>
     </section>
 
-    <div class="modal fade" id="tab-exchange-info-modal" tabindex="-1" role="dialog" >
+    <div class="modal fade" id="topup-card-info-modal" tabindex="-1" role="dialog" >
         <div class="modal-dialog" role="document">
             <div class="modal-content regular-confirm-modal">
-                <div class="title">Infomation</div>
-                <div class="content text-center">
+                <div class="content text-center full-content">
                     Donec accumsan et ligula sit amet egestas. Curabitur vitae mauris et lacus vehicula dignissim. Morbi lectus magna, consequat nec fermentum nec, condimentum vitae dolor.<br><br>
 
                     Aenean malesuada massa quis suscipit fringilla. Pellentesque felis ex, luctus et finibus eget.<br><br>
@@ -415,6 +528,7 @@
                 </div>
                 <div class="bottom">
                     <button class="confirm-btn confirm-accept" data-dismiss="modal">OK</button>
+
                 </div>
             </div>
         </div>
