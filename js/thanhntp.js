@@ -248,6 +248,20 @@ $(document).ready(function () {
         $("#step3").removeClass('active');
         $("#step4").addClass('active');
     })
+
+    $(".list-received .item").click(function () {
+        $(this).closest('.list-received').find('.item').removeClass('show-detail');
+        $(this).addClass('show-detail');
+    })
+
+    /**/
+    $("#leaderboard-tab .tab-content .actions .btn").click(function () {
+        var currentPoint = $(this).attr('data-target');
+        var currentTab = $(this).closest('.tab-pane').find('.list-leaderboard');
+        currentTab.animate({
+            scrollTop: $(currentPoint).offset().top - currentTab.offset().top + currentTab.scrollTop()
+        }, 2000);
+    })
 })
 
 function copyToClipboard(elementId) {
