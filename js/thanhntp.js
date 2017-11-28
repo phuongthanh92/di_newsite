@@ -262,6 +262,37 @@ $(document).ready(function () {
             scrollTop: $(currentPoint).offset().top - currentTab.offset().top + currentTab.scrollTop()
         }, 2000);
     })
+    
+    /* daily gift*/
+    $(".list-received .item-daily .action  a").click(function () {
+        $(this).closest('.list-received').addClass('hide-daily');
+        $('.daily-gift-point').addClass('show');
+        setTimeout(function () {
+            $('.daily-gift-point').removeClass('show')
+        }, 3100)
+    })
+
+    /*change avatar*/
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#image-upload-avatar').attr('src', e.target.result);
+
+                $('#image-upload-avatar').hide();
+                $('#image-upload-avatar').fadeIn(650);
+
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#btn-upload-avatar").change(function() {
+        readURL(this);
+    });
 })
 
 function copyToClipboard(elementId) {
