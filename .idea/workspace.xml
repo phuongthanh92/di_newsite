@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42962464-93ce-4d56-aa30-dc4a1775b3af" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_survey.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/survey-1-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/survey-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/survey-list.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pagination.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dark.css" afterPath="$PROJECT_DIR$/css/dark.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mixins.css" afterPath="$PROJECT_DIR$/css/mixins.css" />
@@ -10,12 +15,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/shortcodes/clients.css" afterPath="$PROJECT_DIR$/css/shortcodes/clients.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/shortcodes/overlay.css" afterPath="$PROJECT_DIR$/css/shortcodes/overlay.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/variables.css" afterPath="$PROJECT_DIR$/css/variables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/thanhntp.js" afterPath="$PROJECT_DIR$/js/thanhntp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile-history.html" afterPath="$PROJECT_DIR$/profile-history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_profile.scss" afterPath="$PROJECT_DIR$/scss/_profile.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_profile_edit.html" afterPath="$PROJECT_DIR$/thanhntp_profile_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/responsive.less" afterPath="$PROJECT_DIR$/less/responsive.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_variables.scss" afterPath="$PROJECT_DIR$/scss/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.css" afterPath="$PROJECT_DIR$/thanhntp_style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.css.map" afterPath="$PROJECT_DIR$/thanhntp_style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.scss" afterPath="$PROJECT_DIR$/thanhntp_style.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,111 +33,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile-history.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile-history.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4840">
-              <caret line="242" column="33" lean-forward="false" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_profile.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/_profile.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3400">
-              <caret line="434" column="15" lean-forward="false" selection-start-line="434" selection-start-column="15" selection-end-line="435" selection-end-column="16" />
-              <folding>
-                <element signature="e#322#1560#0" expanded="false" />
-                <element signature="e#1807#2703#0" expanded="false" />
-                <element signature="e#2727#3017#0" expanded="false" />
-                <element signature="e#3334#3397#0" expanded="false" />
-                <element signature="e#3537#3881#0" expanded="false" />
-                <element signature="e#3905#4671#0" expanded="false" />
-                <element signature="e#4712#4962#0" expanded="false" />
-                <element signature="e#6220#6650#0" expanded="false" />
-                <element signature="e#6665#7924#0" expanded="false" />
-                <element signature="e#8587#9052#0" expanded="false" />
-                <element signature="e#9065#9112#0" expanded="false" />
-                <element signature="e#11118#12652#0" expanded="false" />
-                <element signature="e#11490#11797#0" expanded="false" />
-                <element signature="e#11814#11958#0" expanded="false" />
-                <element signature="e#13807#15301#0" expanded="false" />
-                <element signature="e#15505#16005#0" expanded="false" />
-                <element signature="e#16139#16247#0" expanded="false" />
-                <element signature="e#16264#16927#0" expanded="false" />
-                <element signature="e#16951#16997#0" expanded="false" />
-                <element signature="e#17066#17271#0" expanded="false" />
-                <element signature="e#17290#17391#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanhntp_profile_edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thanhntp_profile_edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="216" column="66" lean-forward="false" selection-start-line="216" selection-start-column="66" selection-end-line="216" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_homepage.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/_homepage.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10160">
-              <caret line="538" column="8" lean-forward="false" selection-start-line="538" selection-start-column="8" selection-end-line="538" selection-end-column="20" />
-              <folding>
-                <element signature="e#11616#12290#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leaderboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leaderboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="468" column="42" lean-forward="false" selection-start-line="468" selection-start-column="42" selection-end-line="468" selection-end-column="42" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanhntp.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/thanhntp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="268" column="48" lean-forward="true" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="survey-1-video.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/survey-1-video.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="778">
+                  <caret line="247" column="42" lean-forward="false" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
+                  <folding>
+                    <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="_survey.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scss/_survey.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="775">
+                  <caret line="136" column="15" lean-forward="false" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#3398#3591#0" expanded="false" />
+                    <element signature="e#3608#3791#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,8 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>my</find>
-      <find>stroke</find>
       <find>feedbac</find>
       <find>leade</find>
       <find>info-detail-popover</find>
@@ -174,6 +107,8 @@
       <find>@ke</find>
       <find>dail</find>
       <find>item-daily</find>
+      <find>325px</find>
+      <find>survey</find>
     </findStrings>
     <replaceStrings>
       <replace>avatar-img</replace>
@@ -202,11 +137,9 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/message-detail.html" />
         <option value="$PROJECT_DIR$/message.html" />
-        <option value="$PROJECT_DIR$/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/scss/_message.scss" />
         <option value="$PROJECT_DIR$/point-exchange.html" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
-        <option value="$PROJECT_DIR$/thanhntp_style.scss" />
         <option value="$PROJECT_DIR$/profile-invite-friends.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/_homepage.scss" />
@@ -217,6 +150,13 @@
         <option value="$PROJECT_DIR$/scss/_profile.scss" />
         <option value="$PROJECT_DIR$/thanhntp_profile_edit.html" />
         <option value="$PROJECT_DIR$/js/thanhntp.js" />
+        <option value="$PROJECT_DIR$/thanhntp_style.scss" />
+        <option value="$PROJECT_DIR$/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/less/responsive.less" />
+        <option value="$PROJECT_DIR$/survey-detail.html" />
+        <option value="$PROJECT_DIR$/survey-list.html" />
+        <option value="$PROJECT_DIR$/scss/_survey.scss" />
+        <option value="$PROJECT_DIR$/survey-1-video.html" />
       </list>
     </option>
   </component>
@@ -248,7 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,9 +215,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="di_newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="di_newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,15 +244,15 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\thanhntp\register\fonts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\thanhntp\di_newsite" />
       <recent name="D:\app\xampp\htdocs\di_dang\di_newsite" />
       <recent name="D:\app\xampp\htdocs\di_dang\di_newsite\css" />
       <recent name="E:\thanhntp\register" />
       <recent name="E:\thanhntp\register\images" />
-      <recent name="E:\thanhntp\register\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\thanhntp\register\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -431,11 +385,12 @@
       <workItem from="1511852333748" duration="6511000" />
       <workItem from="1511859890207" duration="1072000" />
       <workItem from="1511865224055" duration="742000" />
+      <workItem from="1512456676942" duration="8662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200340000" />
+    <option name="totallyTimeSpent" value="209002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -472,42 +427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thanhntp_feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="219" column="64" lean-forward="false" selection-start-line="219" selection-start-column="64" selection-end-line="219" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/thanhntp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3723">
-          <caret line="219" column="18" lean-forward="false" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thanhntp_congrat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4233">
-          <caret line="249" column="17" lean-forward="false" selection-start-line="249" selection-start-column="17" selection-end-line="249" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-di-myprofile.html" />
-    <entry file="file://$PROJECT_DIR$/thanhntp_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="64" lean-forward="false" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/thanhntp_style.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -617,24 +536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detail-faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="225" column="34" lean-forward="true" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_faq.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="86" column="21" lean-forward="false" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/list-news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="351" column="36" lean-forward="false" selection-start-line="351" selection-start-column="36" selection-end-line="351" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -673,14 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_news.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -710,34 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thanhntp_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="2444" column="1" lean-forward="true" selection-start-line="2444" selection-start-column="1" selection-end-line="2444" selection-end-column="1" />
-          <folding>
-            <element signature="e#15565#15935#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14020">
-          <caret line="701" column="58" lean-forward="false" selection-start-line="699" selection-start-column="52" selection-end-line="701" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_homepage.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10160">
-          <caret line="538" column="8" lean-forward="false" selection-start-line="538" selection-start-column="8" selection-end-line="538" selection-end-column="20" />
-          <folding>
-            <element signature="e#11616#12290#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_point-exchange.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
@@ -760,33 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
           <caret line="364" column="105" lean-forward="false" selection-start-line="364" selection-start-column="105" selection-end-line="364" selection-end-column="105" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#13693#13699#0" expanded="true" />
-            <element signature="e#14445#14451#0" expanded="true" />
-            <element signature="e#15197#15203#0" expanded="true" />
-            <element signature="e#15949#15955#0" expanded="true" />
-            <element signature="e#16701#16707#0" expanded="true" />
-            <element signature="e#17453#17459#0" expanded="true" />
-            <element signature="e#18205#18211#0" expanded="true" />
-            <element signature="e#18957#18963#0" expanded="true" />
-            <element signature="e#19709#19715#0" expanded="true" />
-            <element signature="e#20461#20467#0" expanded="true" />
-            <element signature="e#21213#21219#0" expanded="true" />
-            <element signature="e#22451#22457#0" expanded="true" />
-            <element signature="e#23163#23169#0" expanded="true" />
-            <element signature="e#23875#23881#0" expanded="true" />
-            <element signature="e#24587#24593#0" expanded="true" />
-            <element signature="e#25299#25305#0" expanded="true" />
-            <element signature="e#26011#26017#0" expanded="true" />
-            <element signature="e#26723#26729#0" expanded="true" />
-            <element signature="e#27435#27441#0" expanded="true" />
-            <element signature="e#28147#28153#0" expanded="true" />
-            <element signature="e#28859#28865#0" expanded="true" />
-            <element signature="e#29571#29577#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,17 +640,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile-history.html">
+    <entry file="file://$PROJECT_DIR$/scss/_profile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4840">
-          <caret line="242" column="33" lean-forward="false" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
+        <state relative-caret-position="3360">
+          <caret line="432" column="15" lean-forward="false" selection-start-line="432" selection-start-column="15" selection-end-line="432" selection-end-column="15" />
+          <folding>
+            <element signature="e#322#1560#0" expanded="false" />
+            <element signature="e#1807#2703#0" expanded="false" />
+            <element signature="e#2727#3017#0" expanded="false" />
+            <element signature="e#3334#3397#0" expanded="false" />
+            <element signature="e#3537#3881#0" expanded="false" />
+            <element signature="e#3905#4671#0" expanded="false" />
+            <element signature="e#4712#4962#0" expanded="false" />
+            <element signature="e#6220#6650#0" expanded="false" />
+            <element signature="e#6665#7924#0" expanded="false" />
+            <element signature="e#8587#9052#0" expanded="false" />
+            <element signature="e#9065#9112#0" expanded="false" />
+            <marker date="1512444596582" expanded="true" signature="8036:9219" ph="{...}" />
+            <marker date="1512444596582" expanded="true" signature="8123:9219" ph="{...}" />
+            <marker date="1512444596582" expanded="true" signature="9130:9219" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanhntp_profile_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4320">
+          <caret line="216" column="66" lean-forward="false" selection-start-line="216" selection-start-column="66" selection-end-line="216" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/leaderboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
+        <state relative-caret-position="829">
           <caret line="468" column="42" lean-forward="false" selection-start-line="468" selection-start-column="42" selection-end-line="468" selection-end-column="42" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -833,49 +698,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_profile.scss">
+    <entry file="file://$PROJECT_DIR$/js/thanhntp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3400">
-          <caret line="434" column="15" lean-forward="false" selection-start-line="434" selection-start-column="15" selection-end-line="435" selection-end-column="16" />
+        <state relative-caret-position="218">
+          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list-news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="317" column="32" lean-forward="true" selection-start-line="317" selection-start-column="32" selection-end-line="317" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanhntp_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="2981" column="23" lean-forward="true" selection-start-line="2981" selection-start-column="23" selection-end-line="2981" selection-end-column="23" />
           <folding>
-            <element signature="e#322#1560#0" expanded="false" />
-            <element signature="e#1807#2703#0" expanded="false" />
-            <element signature="e#2727#3017#0" expanded="false" />
-            <element signature="e#3334#3397#0" expanded="false" />
-            <element signature="e#3537#3881#0" expanded="false" />
-            <element signature="e#3905#4671#0" expanded="false" />
-            <element signature="e#4712#4962#0" expanded="false" />
-            <element signature="e#6220#6650#0" expanded="false" />
-            <element signature="e#6665#7924#0" expanded="false" />
-            <element signature="e#8587#9052#0" expanded="false" />
-            <element signature="e#9065#9112#0" expanded="false" />
-            <element signature="e#11118#12652#0" expanded="false" />
-            <element signature="e#11490#11797#0" expanded="false" />
-            <element signature="e#11814#11958#0" expanded="false" />
-            <element signature="e#13807#15301#0" expanded="false" />
-            <element signature="e#15505#16005#0" expanded="false" />
-            <element signature="e#16139#16247#0" expanded="false" />
-            <element signature="e#16264#16927#0" expanded="false" />
-            <element signature="e#16951#16997#0" expanded="false" />
-            <element signature="e#17066#17271#0" expanded="false" />
-            <element signature="e#17290#17391#0" expanded="false" />
+            <element signature="e#15565#15935#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thanhntp_profile_edit.html">
+    <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="216" column="66" lean-forward="false" selection-start-line="216" selection-start-column="66" selection-end-line="216" selection-end-column="85" />
+        <state relative-caret-position="60">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/thanhntp.js">
+    <entry file="file://$PROJECT_DIR$/less/responsive.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="268" column="48" lean-forward="true" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
+        <state relative-caret-position="211">
+          <caret line="2688" column="6" lean-forward="false" selection-start-line="2688" selection-start-column="4" selection-end-line="2693" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="331" column="50" lean-forward="true" selection-start-line="331" selection-start-column="50" selection-end-line="331" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail-news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile-history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="242" column="33" lean-forward="false" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail-faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="225" column="34" lean-forward="true" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-499">
+          <caret line="231" column="33" lean-forward="false" selection-start-line="231" selection-start-column="33" selection-end-line="231" selection-end-column="33" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="252" column="49" lean-forward="false" selection-start-line="252" selection-start-column="36" selection-end-line="252" selection-end-column="49" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#12496#12502#0" expanded="true" />
+            <element signature="e#12502#12508#0" expanded="true" />
+            <element signature="e#12508#12514#0" expanded="true" />
+            <element signature="e#12514#12520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_homepage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="454" column="24" lean-forward="false" selection-start-line="454" selection-start-column="24" selection-end-line="454" selection-end-column="24" />
+          <folding>
+            <element signature="e#11616#12290#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_survey.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="136" column="15" lean-forward="false" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
+          <folding>
+            <element signature="e#3398#3591#0" expanded="false" />
+            <element signature="e#3608#3791#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-1-video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="247" column="42" lean-forward="false" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

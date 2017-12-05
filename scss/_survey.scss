@@ -1,0 +1,138 @@
+.list-survey {
+  .item-survey {
+    height: 260px;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid $blueColor;
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(0%, rgba(246, 246, 246, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+      z-index: 1;
+    }
+    .type-survey {
+      background-color: #f00000;
+      color: #ffffff;
+      font-weight: bold;
+      height: 35px;
+      line-height: 35px;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 0 30px 0 20px;
+      border-radius: 0 0 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      color: #ffffff;
+      z-index: 2;
+      .description {
+        @include hiddenText(18px, 1.5, 2);
+        font-weight: bold;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+      }
+    }
+    .point {
+      font-family: "Open Sans";
+      font-style: italic;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+      font-size: 36px;
+      font-weight: 900;
+      color: #fff587;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.survey-detail {
+  max-width: 740px;
+  margin: 0 auto 40px;
+  .image-banner {
+    position: relative;
+    margin: 10px 0 30px;
+    border: 1px solid $blueColor;
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(0%, rgba(246, 246, 246, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+      z-index: 1;
+    }
+    .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      color: #ffffff;
+      z-index: 2;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    font-size: 24px;
+    color: #6f6f6f;
+    margin-bottom: 40px;
+    .label {
+      font-size: 24px;
+      color: #000000;
+      font-weight: bold;
+      padding-left: 0;
+    }
+  }
+  .register-form{
+    max-width: none;
+  }
+  .btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.survey-video{
+  .question-content{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    font-size:18px;
+    font-weight:bold;
+    color: #6f6f6f;
+    min-height: 124px;
+    margin-bottom: 10px;
+  }
+}
+video{
+  max-width: 100%;
+  height: auto;
+}

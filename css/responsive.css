@@ -2158,10 +2158,11 @@ tbody tr:hover {
 }
 @media only screen and (max-width: 479px) {
   /*.container,
-  #header.full-header .container,
-  .container-fullwidth {
-    width: 325px !important;
-  }*/
+	#header.full-header .container,
+		.container-fullwidth {
+		width: 325px !important;
+	}
+*/
   .container.vertical-middle {
     width: 100% !important;
   }
