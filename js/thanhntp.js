@@ -262,15 +262,6 @@ $(document).ready(function () {
             scrollTop: $(currentPoint).offset().top - currentTab.offset().top + currentTab.scrollTop()
         }, 2000);
     })
-    
-    /* daily gift*/
-    $(".list-received .item-daily .action  a").click(function () {
-        $(this).closest('.list-received').addClass('hide-daily');
-        $('.daily-gift-point').addClass('show');
-        setTimeout(function () {
-            $('.daily-gift-point').removeClass('show')
-        }, 3100)
-    })
 
     /*change avatar*/
     function readURL(input) {

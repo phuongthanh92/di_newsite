@@ -30,24 +30,6 @@
   max-width: 100%;
 }
 
-.pagination {
-  text-align: center;
-  display: block;
-  > li {
-    display: inline-block;
-    a {
-      border: none;
-      border-radius: 0 !important;
-      color: $blueColor !important;
-    }
-    &:hover, &:focus, &.active {
-      a {
-        background-color: $blueColor !important;
-        color: #ffffff !important;
-      }
-    }
-  }
-}
 
 .controls-links {
   width: 100%;

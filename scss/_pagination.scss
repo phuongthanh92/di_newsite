@@ -1,0 +1,45 @@
+.pagination {
+  text-align: center;
+  display: block;
+  > li {
+    display: inline-block;
+    padding: 0 5px;
+    a {
+      border: none;
+      border-radius: 0 !important;
+      color: #000 !important;
+      background-color: #cccccc;
+      font-size: 18px;
+      width: 33px;
+      height: 33px;
+      line-height: 33px;
+      padding: 0;
+      text-align: center;
+    }
+    &:hover, &:focus, &.active {
+      a {
+        background-color: #0099ff !important;
+        color: #ffffff !important;
+        font-weight: bold;
+      }
+    }
+    @media screen and (max-width: 767px){
+      padding: 0;
+      a{
+        width: 47px;
+        height: 47px;
+        font-size:23px;
+        line-height: 47px;
+      }
+    }
+    @media screen and (max-width: 360px){
+      padding: 0 ;
+      a{
+        width: 57px;
+        height: 57px;
+        font-size:28px;
+        line-height: 57px;
+      }
+    }
+  }
+}
