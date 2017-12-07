@@ -111,7 +111,7 @@
       padding-left: 0;
     }
   }
-  .register-form{
+  .register-form {
     max-width: none;
   }
   .btn {
@@ -120,19 +120,186 @@
   }
 }
 
-.survey-video{
-  .question-content{
+.progress {
+  position: relative;
+  overflow: visible;
+  &.progress-small {
+    height: 12px;
+    border-radius: 6px;
+  }
+  .progress-bar-gradient {
+    border-radius: 6px;
+    background: rgba(246, 246, 246, 1);
+    background: -moz-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(96, 191, 255, 1) 0%, rgba(0, 95, 158, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246, 246, 246, 1)), color-stop(0%, rgba(96, 191, 255, 1)), color-stop(100%, rgba(0, 95, 158, 1)));
+    background: -webkit-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(96, 191, 255, 1) 0%, rgba(0, 95, 158, 1) 100%);
+    background: -o-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(96, 191, 255, 1) 0%, rgba(0, 95, 158, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(246, 246, 246, 1) 0%, rgba(96, 191, 255, 1) 0%, rgba(0, 95, 158, 1) 100%);
+    background: linear-gradient(to right, rgba(246, 246, 246, 1) 0%, rgba(96, 191, 255, 1) 0%, rgba(0, 95, 158, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#005f9e', GradientType=1);
+  }
+  .title {
+    font-size: 30px;
+    color: #6f6f6f;
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}
+
+.survey-progress{
+  max-width: 780px;
+  padding: 40px 0;
+  margin: 0 auto;
+  .question-content {
     padding: 10px 20px;
     border-radius: 10px;
     background-color: #ebebeb;
-    font-size:18px;
-    font-weight:bold;
+    font-size: 18px;
+    font-weight: bold;
     color: #6f6f6f;
     min-height: 124px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    max-width: 720px;
+  }
+  .list-answers {
+    .item-radio {
+      margin-bottom: 8px;
+    }
   }
 }
-video{
+.survey-images{
+  >.image{
+    max-width: 720px;
+    margin: 0 auto 10px;
+  }
+}
+
+.survey-answer{
+  .list-answers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .item-radio{
+      margin: 2px !important;
+      max-width: 272px;
+    }
+  }
+}
+.survey-answer-radio{
+  .list-answers{
+    .item-radio, .item-checkbox{
+      margin-bottom: 10px;
+      .content{
+        font-weight:normal;
+      }
+    }
+  }
+}
+.open-answer-input{
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ebebeb;
+  padding: 20px;
+  textarea{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+    height: 298px;
+    border:1px solid $blueColor;
+  }
+}
+
+video {
   max-width: 100%;
   height: auto;
+  background-color: #ebebeb;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+.item-checkbox {
+  label {
+    background: #ebebeb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    overflow: hidden;
+    margin: 0;
+    img{
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  .status {
+    width: 17px;
+    height: 17px;
+    margin: 8px 20px 5px 5px;
+    border: 1px solid #a1a1a1;
+    background: #FFFFFF;
+    display: block;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "";
+      top:1px;
+      left: 1px;
+      right: 1px;
+      bottom: 1px;
+      font-family: FontAwesome;
+    }
+  }
+  .content {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6f6f6f;
+    padding: 5px;
+    width: calc(100% - 25px - 17px - 30px);
+  }
+  input {
+    display: none;
+    &:checked + label {
+      background: #9cd8ff;
+      .status {
+        &:after{
+          content: "\f00c";
+          line-height: 1;
+          font-size: 20px;
+          margin-top: -4px;
+          margin-left: -2px;
+        }
+      }
+    }
+  }
+}
+
+.item-radio{
+  @extend .item-checkbox;
+  .status{
+    border-radius: 50%;
+    &:after{
+      border-radius: 50%;
+    }
+  }
+  input {
+    &:checked + label {
+      .status {
+        &:after{
+          content: "";
+          background: $blueColor;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
 }
