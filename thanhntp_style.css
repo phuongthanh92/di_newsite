@@ -430,7 +430,7 @@ html {
   min-height: 100%;
   padding: 0 10px;
   width: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   z-index: -1;
   -webkit-transition: background 0.5s, z-index 2s;
   transition: background 0.5s, z-index 2s; }
@@ -2030,7 +2030,7 @@ html {
   width: 0;
   height: 0;
   z-index: -1;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   -webkit-transition: background 0.5s 0.75s, z-index 0.75s, width 0s 0.75s, height 0s 0.5s;
   transition: background 0.5s 0.75s, z-index 0.75s, width 0s 0.75s, height 0s 0.5s; }
 .menu-mobile-wrapper .social {
@@ -2621,8 +2621,8 @@ html {
       /* safari5.1+,chrome10+ */
       /* opera 11.10+ */
       /* ie10+ */
-      background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-      background: linear-gradient(0deg, black 0%, transparent 100%);
+      background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       /* w3c */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
       /* ie6-9 */
@@ -2700,8 +2700,8 @@ html {
       /* safari5.1+,chrome10+ */
       /* opera 11.10+ */
       /* ie10+ */
-      background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-      background: linear-gradient(0deg, black 0%, transparent 100%);
+      background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       /* w3c */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
       /* ie6-9 */
@@ -2907,14 +2907,14 @@ html {
   #homepage-survey-slider .bx-prev {
     left: -3px;
     background-image: url("images/homepage_newstab_prev-dark.png");
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-position: left center;
     display: block;
     opacity: 1; }
   #homepage-survey-slider .bx-next {
     right: -3px;
     background-image: url("images/homepage_newstab_next-dark.png");
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-position: right center;
     display: block;
     opacity: 1; } }
@@ -4890,8 +4890,10 @@ html {
     .survey-progress .question-content {
       padding: 5px 10px;
       border-radius: 4px;
-      font-size: 12px;
-      min-height: 64px; } }
+      font-size: 14px;
+      min-height: 64px; }
+      .survey-progress .question-content.light-on-mobile {
+        background: transparent; } }
 
 .survey-images > .image {
   max-width: 720px;
@@ -4919,7 +4921,8 @@ html {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  margin: 0 20px; }
 .group-questions .item-question.active .list-answers {
   max-height: 1000px; }
 
@@ -4944,7 +4947,11 @@ html {
   color: #fff; }
 .list-drag .item-drop {
   border: 1px dashed #005f9e;
-  color: #005f9e; }
+  color: #005f9e;
+  position: relative; }
+  .list-drag .item-drop .item-drag {
+    margin: 0;
+    position: absolute !important; }
 @media screen and (max-width: 768px) {
   .list-drag .row {
     margin: -5px; }
@@ -5077,5 +5084,113 @@ video {
     @media screen and (max-width: 767px) {
       .matrix-question td.title a {
         font-size: 12px; } }
+
+.draggable {
+  filter: alpha(opacity=60);
+  opacity: 0.6; }
+
+.survey-slide-group {
+  padding-top: 60px; }
+  .survey-slide-group .bx-wrapper .bx-pager {
+    bottom: auto;
+    top: -60px;
+    left: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #005f9e; }
+  .survey-slide-group .bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    top: -50px;
+    margin-top: 0;
+    -webkit-animation: none !important;
+            animation: none !important; }
+    .survey-slide-group .bx-wrapper .bx-controls-direction a.bx-prev {
+      background: url("images/group-question-bx-prev.png") no-repeat center;
+      background-size: 100%;
+      left: 50%;
+      margin-left: -100px; }
+    .survey-slide-group .bx-wrapper .bx-controls-direction a.bx-next {
+      background: url("images/group-question-bx-next.png") no-repeat center;
+      background-size: 100%;
+      right: 50%;
+      margin-right: -100px; }
+
+.survey-completed {
+  padding: 70px 0 30px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #6f6f6f;
+  text-align: center; }
+  .survey-completed .content {
+    max-width: 580px;
+    margin: 0 auto; }
+  .survey-completed .text-uppercase {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.4em !important; }
+  .survey-completed .dark-text {
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+    font-weight: bold; }
+  .survey-completed .point {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1;
+    position: relative; }
+    .survey-completed .point:before, .survey-completed .point:after {
+      width: 50px;
+      height: 50px;
+      content: '';
+      background: url("images/star.png") no-repeat center;
+      background-size: 100% 100%;
+      position: absolute;
+      top: -30px; }
+    .survey-completed .point:before {
+      left: 0; }
+    .survey-completed .point:after {
+      right: 0;
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+    .survey-completed .point p {
+      margin: 0;
+      font-weight: normal; }
+    .survey-completed .point .text-danger {
+      color: #ff4e4e;
+      font-size: 60px;
+      font-weight: 900; }
+    .survey-completed .point > .text-primary {
+      font-size: 60px;
+      font-weight: 600;
+      color: #005f9e; }
+  .survey-completed .register-form {
+    max-width: none; }
+  .survey-completed .btn {
+    margin-left: 10px;
+    margin-right: 10px; }
+  @media screen and (max-width: 480px) {
+    .survey-completed {
+      padding: 30px 0 0; }
+      .survey-completed .register-form .btn {
+        height: 30px;
+        font-size: 12px;
+        padding: 0 15px; }
+      .survey-completed .text-uppercase {
+        font-size: 18px; }
+      .survey-completed .dark-text {
+        font-size: 18px; }
+      .survey-completed .point {
+        display: inline-block;
+        font-size: 15px;
+        padding: 0 30px; }
+        .survey-completed .point:after, .survey-completed .point:before {
+          width: 30px;
+          height: 30px; }
+        .survey-completed .point .text-danger {
+          font-size: 30px; }
+        .survey-completed .point > .text-primary {
+          font-size: 30px; } }
 
 /*# sourceMappingURL=thanhntp_style.css.map */

@@ -299,18 +299,23 @@ $(document).ready(function () {
     })
 
     /*drag & drop answer*/
-    function allowDrop(ev) {
-        ev.preventDefault();
-    }
+    $( ".item-drag" ).draggable();
 
-    function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
-    }
+    $( ".item-drop" ).droppable({
+        accept: ".item-drag",
+        drop: function( event, ui ) {
+            var droppable = $(this);
+            var draggable = ui.draggable;
+            // Move draggable into droppable
+            draggable.appendTo(droppable);
+            draggable.css({top: '-1px', left: '-1px', right: '-1px'});
+        }
+    });
 
-    function drop(ev) {
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
+    if($('#slide-question-items').length > 0){
+        $('#slide-question-items').bxSlider({
+            pagerType: 'short'
+        });
     }
 })
 
