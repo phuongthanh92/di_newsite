@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/animate.css" type="text/css"/>
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"/>
+    <link rel="stylesheet" href="css/tablesaw.css" type="text/css"/>
 
     <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/>
@@ -35,6 +36,8 @@
     <script type="text/javascript" src="js/countdown.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
     <script type="text/javascript" src="js/jquery-canvas-sparkles.min.js"></script>
+    <script type="text/javascript" src="js/tablesaw.js"></script>
+    <script type="text/javascript" src="js/tablesaw-init.js"></script>
     <script type="text/javascript" src="js/thanhntp.js"></script>
     <!-- Document Title
     ============================================= -->
@@ -227,107 +230,243 @@
 
     <section id="content">
         <div class="content-wrap">
-            <div class="page-content survey-page">
-                <div class="title-page text-center on-desktop">
-                    Survey Detail
-                </div>
-                <div class="container">
-                    <div class="list-survey row">
-                        <div class="col-sm-6">
-                            <div class="item-survey">
-                                <img src="images/homepage_hotsv_sm-1.jpg" alt="">
-                                <div class="cover"></div>
-                                <div class="type-survey">High score surveys</div>
-                                <div class="info">
-                                    <div class="point">
-                                        <span class="lg-text">11,500</span>
-                                        <span class="sm-text">points</span>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="item-survey">
-                                <img src="images/homepage_hotsv_sm-1.jpg" alt="">
-                                <div class="cover"></div>
-                                <div class="info">
-                                    <div class="point">
-                                        <span class="lg-text">11,500</span>
-                                        <span class="sm-text">points</span>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="item-survey">
-                                <img src="images/homepage_hotsv_sm-1.jpg" alt="">
-                                <div class="cover"></div>
-                                <div class="type-survey">High score surveys</div>
-                                <div class="info">
-                                    <div class="point">
-                                        <span class="lg-text">11,500</span>
-                                        <span class="sm-text">points</span>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="item-survey">
-                                <img src="images/homepage_hotsv_sm-1.jpg" alt="">
-                                <div class="cover"></div>
-                                <div class="info">
-                                    <div class="point">
-                                        <span class="lg-text">11,500</span>
-                                        <span class="sm-text">points</span>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="item-survey">
-                                <img src="images/homepage_hotsv_sm-1.jpg" alt="">
-                                <div class="cover"></div>
-                                <div class="type-survey">High score surveys</div>
-                                <div class="info">
-                                    <div class="point">
-                                        <span class="lg-text">11,500</span>
-                                        <span class="sm-text">points</span>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="item-survey">
-                                <img src="images/homepage_hotsv_sm-1.jpg" alt="">
-                                <div class="cover"></div>
-                                <div class="info">
-                                    <div class="point">
-                                        <span class="lg-text">11,500</span>
-                                        <span class="sm-text">points</span>
-                                    </div>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="survey-answer-radio survey-progress clearfix">
+                    <div class="progress progress-small">
+                        <div class="progress-bar progress-bar-gradient" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            <span class="title">40%</span>
                         </div>
                     </div>
-
+                    <div class="question-content">
+                        Vivamus vitae leo posuere, eleifend elit a, tincidunt metus lvitae leo posuere, eleifend elit a, tincidunt metus eleifend elit a, tincidunt metus lvitae leo eleifend elit a, tincidunt metus lvitae leo:
+                    </div>
+                    <div class="matrix-question">
+                        <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                            <thead>
+                            <tr>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist"></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">
+                                    <span>Web, forum</span>
+                                    <div class="icon-q">?</div>
+                                </th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">TV<div class="icon-q">?</div></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Magazine <div class="icon-q">?</div></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Radio<div class="icon-q">?</div></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Radio<div class="icon-q">?</div></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Radio<div class="icon-q">?</div></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">Radio<div class="icon-q">?</div></th>
+                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="8">Radio<div class="icon-q">?</div></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Quisque orci dui, porta eget vehicula porttitor, pulvinar eget</a></td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans11" name="radio-question">
+                                        <label for="ans11">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans12" name="radio-question">
+                                        <label for="ans12">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans13" name="radio-question">
+                                        <label for="ans13">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans14" name="radio-question">
+                                        <label for="ans14">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans15" name="radio-question">
+                                        <label for="ans15">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans16" name="radio-question">
+                                        <label for="ans16">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans17" name="radio-question">
+                                        <label for="ans17">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans18" name="radio-question">
+                                        <label for="ans18">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans21" name="radio-question2">
+                                        <label for="ans21">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans22" name="radio-question2">
+                                        <label for="ans22">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans23" name="radio-question2">
+                                        <label for="ans23">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans24" name="radio-question2">
+                                        <label for="ans24">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans25" name="radio-question2">
+                                        <label for="ans25">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans26" name="radio-question2">
+                                        <label for="ans26">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans27" name="radio-question2">
+                                        <label for="ans27">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans28" name="radio-question2">
+                                        <label for="ans28">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans31" name="radio-question3">
+                                        <label for="ans31">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans32" name="radio-question3">
+                                        <label for="ans32">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans33" name="radio-question3">
+                                        <label for="ans33">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans34" name="radio-question3">
+                                        <label for="ans34">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans35" name="radio-question3">
+                                        <label for="ans35">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans36" name="radio-question3">
+                                        <label for="ans36">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans37" name="radio-question3">
+                                        <label for="ans37">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-radio">
+                                        <input type="radio" id="ans38" name="radio-question3">
+                                        <label for="ans38">
+                                            <span class="status"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="register-form center">
+                    <button class="btn btn-radius btn-gradient">Continue</button>
                 </div>
             </div>
         </div>
