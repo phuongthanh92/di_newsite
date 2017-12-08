@@ -284,6 +284,34 @@ $(document).ready(function () {
     $("#btn-upload-avatar").change(function() {
         readURL(this);
     });
+
+    /*List questions collapse*/
+
+    $(".group-questions .item-question .question-content").click(function () {
+        $(this).closest('.item-question').toggleClass('active');
+    })
+
+    $(".group-questions .item-question .list-answers .item-radio").click(function () {
+        var currentQuestion = $(this).closest('.item-question');
+        $(this).closest('.group-questions').find('.item-question').removeClass('active');
+        currentQuestion.next('.item-question').addClass('active');
+        $(this).toggleClass('active');
+    })
+
+    /*drag & drop answer*/
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
 })
 
 function copyToClipboard(elementId) {

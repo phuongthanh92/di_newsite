@@ -4,7 +4,7 @@ $lightBlueColor: #00ffff;
 @mixin hiddenText($font-size,$line-height, $lines-to-show) {
   display: block;
   display: -webkit-box;
-  height: $font-size*$line-height*$lines-to-show;
+  max-height: $font-size*$line-height*$lines-to-show;
   font-size: $font-size;
   line-height: $line-height;
   -webkit-line-clamp: $lines-to-show;
