@@ -603,7 +603,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .tab-history .tab-content .top-actions {
     display: block;
     margin-bottom: 10px;
@@ -813,7 +813,7 @@
   }
 }
 
-.list-invited-list{
+.list-invited-list {
   background-color: #005f9e;
   padding: 20px 10px;
   .wrapper-pane {
@@ -825,10 +825,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    .action-feedback{
+    .action-feedback {
       padding-left: 0;
       display: flex;
-      a{
+      a {
         line-height: 40px;
         height: 40px;
         display: inline-block;
@@ -855,11 +855,11 @@
         position: relative;
         overflow: hidden;
         font-size: 14px;
-        font-weight:600;
+        font-weight: 600;
         text-transform: capitalize;
       }
     }
-    .guide-line{
+    .guide-line {
       background: #fff;
       border: 20px;
       font-size: 18px;
@@ -867,33 +867,92 @@
       display: flex;
       width: 540px;
       max-width: 60%;
-      padding: 5px;
+      padding: 6px 5px 7px;
       justify-content: space-around;
       border-radius: 20px;
     }
   }
-  .list-received{
+  .list-received {
     .item {
-      .type{
-        padding: 20px;
+      .type {
+        padding: 0 20px;
+        width: 85px;
       }
-      .info{
-        width: 65%;
-        .content{
-          font-size:16px;
+      .info {
+        width: calc(100% - 285px);
+        .content {
+          font-size: 16px;
           font-weight: 700;
           color: #373737;
         }
       }
+      .action {
+        .point {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .status {
+        line-height: 1;
+      }
     }
-    .image-title{
+    .image-title {
       display: inline-block;
-      width: 60px;
-      height: 40px;
+      width: 50px;
+      height: 45px;
     }
-    .action-feedback{
-      .status{
+    .action-feedback {
+      width: 200px;
+      .status {
         width: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 65px;
+    .top-actions {
+      display: block;
+      margin-top: -70px;
+      margin-bottom: 10px;
+      .action-feedback {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0;
+        &:after {
+          display: none;
+        }
+        a {
+          margin: 0;
+        }
+      }
+      .guide-line {
+        max-width: 100%;
+        border-radius: 10px;
+        font-size: 14px;
+      }
+    }
+    .list-received {
+      .item {
+        .type {
+          padding: 10px 0 10px 10px;
+          width: 50px;
+          .image-title {
+            width: 40px;
+          }
+        }
+        .info {
+          width: calc(100% - 150px);
+          .content {
+            font-size: 15px;
+          }
+        }
+        .action {
+          width: 100px;
+          .point {
+            font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -905,7 +964,7 @@
       background-image: url('images/invite-tab-#{$social}-blue.png');
       background-position: center;
       background-repeat: no-repeat;
-
+      background-size: 100% auto;
     }
   }
 

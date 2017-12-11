@@ -430,7 +430,7 @@ html {
   min-height: 100%;
   padding: 0 10px;
   width: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   z-index: -1;
   -webkit-transition: background 0.5s, z-index 2s;
   transition: background 0.5s, z-index 2s; }
@@ -2030,7 +2030,7 @@ html {
   width: 0;
   height: 0;
   z-index: -1;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   -webkit-transition: background 0.5s 0.75s, z-index 0.75s, width 0s 0.75s, height 0s 0.5s;
   transition: background 0.5s 0.75s, z-index 0.75s, width 0s 0.75s, height 0s 0.5s; }
 .menu-mobile-wrapper .social {
@@ -2621,8 +2621,8 @@ html {
       /* safari5.1+,chrome10+ */
       /* opera 11.10+ */
       /* ie10+ */
-      background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-      background: linear-gradient(0deg, black 0%, transparent 100%);
+      background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       /* w3c */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
       /* ie6-9 */
@@ -2700,8 +2700,8 @@ html {
       /* safari5.1+,chrome10+ */
       /* opera 11.10+ */
       /* ie10+ */
-      background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-      background: linear-gradient(0deg, black 0%, transparent 100%);
+      background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       /* w3c */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
       /* ie6-9 */
@@ -2907,14 +2907,14 @@ html {
   #homepage-survey-slider .bx-prev {
     left: -3px;
     background-image: url("images/homepage_newstab_prev-dark.png");
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-position: left center;
     display: block;
     opacity: 1; }
   #homepage-survey-slider .bx-next {
     right: -3px;
     background-image: url("images/homepage_newstab_next-dark.png");
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-position: right center;
     display: block;
     opacity: 1; } }
@@ -3284,9 +3284,7 @@ html {
   padding-right: 45px;
   border: none;
   text-transform: uppercase;
-  font-weight: bold;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  font-weight: 700;
   position: relative; }
   @media screen and (max-width: 767px) {
     .messages-page .btn-gradient {
@@ -3416,22 +3414,29 @@ html {
         white-space: nowrap;
         line-height: 1.4;
         height: 1.4em;
+        font-size: 14px;
         overflow: hidden;
-        text-overflow: ellipsis; }
+        display: block;
+        text-overflow: ellipsis;
+        color: #373737;
+        font-family: "Open Sans", sans-serif; }
       .list-messages .item-message .item-info .description {
         font-weight: 300;
         white-space: nowrap;
         line-height: 1.4;
         height: 1.4em;
+        font-size: 14px;
         max-height: 1.4em;
         overflow: hidden;
+        display: block;
         text-overflow: ellipsis;
+        font-family: "Open Sans", sans-serif;
         -webkit-transition: max-height 1.5s;
         transition: max-height 1.5s; }
     .list-messages .item-message.item-feedback-msm .item-info .description, .list-messages .item-message.item-feedback-msm .item-info .title, .list-messages .item-message.item-message-open .item-info .description, .list-messages .item-message.item-message-open .item-info .title {
-      white-space: normal;
-      height: auto;
-      max-height: 1000px; }
+      white-space: normal !important;
+      height: auto !important;
+      max-height: 1000px !important; }
     .list-messages .item-message.item-feedback-msm .item-action i, .list-messages .item-message.item-message-open .item-action i {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
@@ -3613,6 +3618,9 @@ html {
 
   .ui-tabs .ui-tabs-panel {
     padding: 5px; } }
+.ui-state-active .ui-icon {
+  display: none; }
+
 .exchange-point {
   background: #005f9e;
   position: relative;
@@ -4739,39 +4747,85 @@ html {
       display: flex;
       width: 540px;
       max-width: 60%;
-      padding: 5px;
+      padding: 6px 5px 7px;
       -ms-flex-pack: distribute;
           justify-content: space-around;
       border-radius: 20px; }
   .list-invited-list .list-received .item .type {
-    padding: 20px; }
+    padding: 0 20px;
+    width: 85px; }
   .list-invited-list .list-received .item .info {
-    width: 65%; }
+    width: calc(100% - 285px); }
     .list-invited-list .list-received .item .info .content {
       font-size: 16px;
       font-weight: 700;
       color: #373737; }
+  .list-invited-list .list-received .item .action .point {
+    font-size: 20px;
+    font-weight: 600; }
+  .list-invited-list .list-received .item .status {
+    line-height: 1; }
   .list-invited-list .list-received .image-title {
     display: inline-block;
-    width: 60px;
-    height: 40px; }
-  .list-invited-list .list-received .action-feedback .status {
-    width: auto; }
+    width: 50px;
+    height: 45px; }
+  .list-invited-list .list-received .action-feedback {
+    width: 200px; }
+    .list-invited-list .list-received .action-feedback .status {
+      width: auto; }
+  @media screen and (max-width: 767px) {
+    .list-invited-list {
+      margin-top: 65px; }
+      .list-invited-list .top-actions {
+        display: block;
+        margin-top: -70px;
+        margin-bottom: 10px; }
+        .list-invited-list .top-actions .action-feedback {
+          width: 100%;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 20px;
+          padding: 0; }
+          .list-invited-list .top-actions .action-feedback:after {
+            display: none; }
+          .list-invited-list .top-actions .action-feedback a {
+            margin: 0; }
+        .list-invited-list .top-actions .guide-line {
+          max-width: 100%;
+          border-radius: 10px;
+          font-size: 14px; }
+      .list-invited-list .list-received .item .type {
+        padding: 10px 0 10px 10px;
+        width: 50px; }
+        .list-invited-list .list-received .item .type .image-title {
+          width: 40px; }
+      .list-invited-list .list-received .item .info {
+        width: calc(100% - 150px); }
+        .list-invited-list .list-received .item .info .content {
+          font-size: 15px; }
+      .list-invited-list .list-received .item .action {
+        width: 100px; }
+        .list-invited-list .list-received .item .action .point {
+          font-size: 18px; } }
 
 .list-invited-list .img-facebook {
   background-image: url("images/invite-tab-facebook-blue.png");
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
 
 .list-invited-list .img-line {
   background-image: url("images/invite-tab-line-blue.png");
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
 
 .list-invited-list .img-email {
   background-image: url("images/invite-tab-email-blue.png");
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
 
 .list-survey .item-survey {
   height: 260px;

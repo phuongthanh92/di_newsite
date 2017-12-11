@@ -15,12 +15,7 @@
     padding-right: 45px;
     border: none;
     text-transform: uppercase;
-    font-weight: bold;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    font-weight: 700;
     position: relative;
     @media screen and (max-width: 767px) {
       height: 30px;
@@ -174,27 +169,33 @@
         white-space: nowrap;
         line-height: 1.4;
         height: 1.4em;
+        font-size: 14px;
         overflow: hidden;
+        display: block;
         text-overflow: ellipsis;
-
+        color: #373737;
+        font-family: "Open Sans", sans-serif;
       }
       .description {
         font-weight: 300;
         white-space: nowrap;
         line-height: 1.4;
         height: 1.4em;
+        font-size: 14px;
         max-height: 1.4em;
         overflow: hidden;
+        display: block;
         text-overflow: ellipsis;
+        font-family: "Open Sans", sans-serif;
         transition: max-height 1.5s;
       }
     }
     &.item-feedback-msm, &.item-message-open {
       .item-info {
         .description, .title {
-          white-space: normal;
-          height: auto;
-          max-height: 1000px;
+          white-space: normal !important;
+          height: auto !important;
+          max-height: 1000px !important;
         }
       }
       .item-action {
@@ -454,6 +455,10 @@
   .ui-tabs .ui-tabs-panel {
     padding: 5px;
   }
+}
+
+.ui-state-active .ui-icon{
+  display: none;
 }
 
 
