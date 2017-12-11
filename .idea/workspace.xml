@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42962464-93ce-4d56-aa30-dc4a1775b3af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/survey-complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/thanhntp.js" afterPath="$PROJECT_DIR$/js/thanhntp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_survey.scss" afterPath="$PROJECT_DIR$/scss/_survey.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/survey-1-radio.html" afterPath="$PROJECT_DIR$/survey-1-radio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/survey-5-drag.html" afterPath="$PROJECT_DIR$/survey-5-drag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.css" afterPath="$PROJECT_DIR$/thanhntp_style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.css.map" afterPath="$PROJECT_DIR$/thanhntp_style.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/survey-5-rate.html" afterPath="$PROJECT_DIR$/survey-4-slide.html" />
-    </list>
+    <list default="true" id="42962464-93ce-4d56-aa30-dc4a1775b3af" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,8 +18,8 @@
       <file leaf-file-name="_survey.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_survey.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="619" column="20" lean-forward="true" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
+            <state relative-caret-position="769">
+              <caret line="619" column="20" lean-forward="false" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
               <folding>
                 <element signature="e#140#1224#0" expanded="false" />
                 <element signature="e#1862#2043#0" expanded="false" />
@@ -55,8 +45,8 @@
       <file leaf-file-name="survey-complete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/survey-complete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="243" column="38" lean-forward="true" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
+            <state relative-caret-position="1420">
+              <caret line="243" column="38" lean-forward="false" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -67,8 +57,8 @@
       <file leaf-file-name="survey-3-radio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/survey-3-radio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="236" column="26" lean-forward="true" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
+            <state relative-caret-position="4720">
+              <caret line="236" column="26" lean-forward="false" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
               <folding>
                 <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -79,8 +69,8 @@
       <file leaf-file-name="survey-1-radio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/survey-1-radio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="237" column="49" lean-forward="true" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
+            <state relative-caret-position="1300">
+              <caret line="237" column="49" lean-forward="false" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -221,7 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,7 +226,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,11 +386,12 @@
       <workItem from="1512654005529" duration="11630000" />
       <workItem from="1512692021730" duration="3896000" />
       <workItem from="1512700218517" duration="7918000" />
+      <workItem from="1512966124563" duration="420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241515000" />
+    <option name="totallyTimeSpent" value="241935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -673,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="761" column="36" lean-forward="false" selection-start-line="761" selection-start-column="36" selection-end-line="761" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,10 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="247" column="57" lean-forward="false" selection-start-line="247" selection-start-column="48" selection-end-line="247" selection-end-column="57" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="250" column="54" lean-forward="false" selection-start-line="250" selection-start-column="48" selection-end-line="250" selection-end-column="54" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,9 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="315" column="45" lean-forward="false" selection-start-line="315" selection-start-column="45" selection-end-line="315" selection-end-column="45" />
-          <folding>
-            <element signature="e#8243#8636#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -730,19 +709,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="240" column="50" lean-forward="false" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="50" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-3-radio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="236" column="26" lean-forward="true" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
+        <state relative-caret-position="4720">
+          <caret line="236" column="26" lean-forward="false" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -751,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-1-radio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="237" column="49" lean-forward="true" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
+        <state relative-caret-position="1300">
+          <caret line="237" column="49" lean-forward="false" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -761,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-complete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="243" column="38" lean-forward="true" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
+        <state relative-caret-position="1420">
+          <caret line="243" column="38" lean-forward="false" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -771,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_survey.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="619" column="20" lean-forward="true" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
+        <state relative-caret-position="769">
+          <caret line="619" column="20" lean-forward="false" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
           <folding>
             <element signature="e#140#1224#0" expanded="false" />
             <element signature="e#1862#2043#0" expanded="false" />
