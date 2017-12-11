@@ -243,9 +243,13 @@
     .question-content {
       padding: 5px 10px;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 14px;
       min-height: 64px;
+      &.light-on-mobile {
+        background: transparent;
+      }
     }
+
   }
 }
 
@@ -285,6 +289,7 @@
       max-height: 0;
       overflow: hidden;
       transition: all 0.5s;
+      margin: 0 20px;
     }
     &.active {
       .list-answers {
@@ -313,11 +318,16 @@
   .item-drop {
     border: 1px dashed $blueColor;
     color: $blueColor;
+    position: relative;
+    .item-drag {
+      margin: 0;
+      position: absolute !important;
+    }
   }
   @media screen and (max-width: 768px) {
-    .row{
+    .row {
       margin: -5px;
-      .col-xs-6{
+      .col-xs-6 {
         padding: 0 5px;
       }
     }
@@ -445,24 +455,24 @@ video {
   }
 }
 
-.matrix-question{
+.matrix-question {
   max-width: 868px;
   margin: 0 auto;
-  .item-radio, .item-checkbox{
+  .item-radio, .item-checkbox {
     text-align: center;
-    label{
+    label {
       display: inline-block;
-      .status{
+      .status {
         margin: 5px;
       }
     }
-    @media screen and (max-width: 767px){
-      label{
+    @media screen and (max-width: 767px) {
+      label {
         padding: 10px;
       }
     }
   }
-  .icon-q{
+  .icon-q {
     display: block;
     width: 20px;
     height: 20px;
@@ -475,12 +485,147 @@ video {
     left: 50%;
     margin-left: -10px;
   }
-  td.title a{
+  td.title a {
     color: #6f6f6f;
-    font-size:18px;
-    @media screen and (max-width: 767px){
-      font-size:12px;
+    font-size: 18px;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
 
+    }
+  }
+}
+
+.draggable {
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
+.survey-slide-group {
+  padding-top: 60px;
+  .bx-wrapper .bx-pager {
+    bottom: auto;
+    top: -60px;
+    left: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: $blueColor;
+  }
+  .bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    top: -50px;
+    margin-top: 0;
+    animation: none !important;
+    &.bx-prev {
+      background: url("images/group-question-bx-prev.png") no-repeat center;
+      background-size: 100%;
+      left: 50%;
+      margin-left: -100px;
+    }
+    &.bx-next {
+      background: url("images/group-question-bx-next.png") no-repeat center;
+      background-size: 100%;
+      right: 50%;
+      margin-right: -100px;
+
+    }
+  }
+}
+
+.survey-completed {
+  padding: 70px 0 30px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #6f6f6f;
+  text-align: center;
+  .content {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .text-uppercase {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.4em !important;
+  }
+  .dark-text {
+    font-size: 30px;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+  }
+  .point {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1;
+    position: relative;
+    &:before, &:after {
+      width: 50px;
+      height: 50px;
+      content: '';
+      background: url("images/star.png") no-repeat center;
+      background-size: 100% 100%;
+      position: absolute;
+      top: -30px;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+      transform: rotate(-180deg);
+    }
+    p {
+      margin: 0;
+      font-weight: normal;
+    }
+    .text-danger {
+      color: #ff4e4e;
+      font-size: 60px;
+      font-weight: 900;
+    }
+    > .text-primary {
+      font-size: 60px;
+      font-weight: 600;
+      color: $blueColor;
+    }
+  }
+  .register-form {
+    max-width: none;
+  }
+  .btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 30px 0 0;
+    .register-form {
+      .btn {
+        height: 30px;
+        font-size: 12px;
+        padding: 0 15px;
+      }
+    }
+    .text-uppercase {
+      font-size: 18px;
+    }
+    .dark-text {
+      font-size: 18px;
+    }
+    .point {
+      display: inline-block;
+      font-size:15px;
+      padding: 0 30px;
+      &:after, &:before {
+        width: 30px;
+        height: 30px;
+      }
+      .text-danger {
+        font-size: 30px;
+      }
+      > .text-primary {
+        font-size: 30px;
+      }
     }
   }
 }
