@@ -813,3 +813,100 @@
   }
 }
 
+.list-invited-list{
+  background-color: #005f9e;
+  padding: 20px 10px;
+  .wrapper-pane {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .top-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .action-feedback{
+      padding-left: 0;
+      display: flex;
+      a{
+        line-height: 40px;
+        height: 40px;
+        display: inline-block;
+        padding: 0 25px;
+        font-size: 14px;
+      }
+      .gradient-action-button {
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+        background: url("images/btn-gradient.png") no-repeat center;
+        color: #FFFFFF !important;
+        -webkit-border-radius: 30px !important;
+        -moz-border-radius: 30px !important;
+        border-radius: 30px !important;
+        width: auto;
+        border: none;
+        background-size: 100% 100%;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        position: relative;
+        overflow: hidden;
+        font-size: 14px;
+        font-weight:600;
+        text-transform: capitalize;
+      }
+    }
+    .guide-line{
+      background: #fff;
+      border: 20px;
+      font-size: 18px;
+      color: #000000;
+      display: flex;
+      width: 540px;
+      max-width: 60%;
+      padding: 5px;
+      justify-content: space-around;
+      border-radius: 20px;
+    }
+  }
+  .list-received{
+    .item {
+      .type{
+        padding: 20px;
+      }
+      .info{
+        width: 65%;
+        .content{
+          font-size:16px;
+          font-weight: 700;
+          color: #373737;
+        }
+      }
+    }
+    .image-title{
+      display: inline-block;
+      width: 60px;
+      height: 40px;
+    }
+    .action-feedback{
+      .status{
+        width: auto;
+      }
+    }
+  }
+}
+
+@each $social in facebook, line, email {
+  .list-invited-list {
+    .img-#{$social} {
+      background-image: url('images/invite-tab-#{$social}-blue.png');
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+}

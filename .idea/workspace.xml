@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42962464-93ce-4d56-aa30-dc4a1775b3af" name="Default" comment="" />
+    <list default="true" id="42962464-93ce-4d56-aa30-dc4a1775b3af" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/survey-detail.html" afterPath="$PROJECT_DIR$/survey-detail.html" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/survey-complete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/thanhntp.js" afterPath="$PROJECT_DIR$/js/thanhntp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_survey.scss" afterPath="$PROJECT_DIR$/scss/_survey.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/survey-1-radio.html" afterPath="$PROJECT_DIR$/survey-1-radio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/survey-5-drag.html" afterPath="$PROJECT_DIR$/survey-5-drag.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.css" afterPath="$PROJECT_DIR$/thanhntp_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thanhntp_style.css.map" afterPath="$PROJECT_DIR$/thanhntp_style.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/survey-5-rate.html" afterPath="$PROJECT_DIR$/survey-4-slide.html" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,8 +33,13 @@
       <file leaf-file-name="_survey.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_survey.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="619" column="20" lean-forward="false" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
+<<<<<<< HEAD
+            <state relative-caret-position="2380">
+              <caret line="462" column="5" lean-forward="false" selection-start-line="462" selection-start-column="5" selection-end-line="462" selection-end-column="5" />
+=======
+            <state relative-caret-position="681">
+              <caret line="619" column="20" lean-forward="true" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
               <folding>
                 <element signature="e#140#1224#0" expanded="false" />
                 <element signature="e#1862#2043#0" expanded="false" />
@@ -45,8 +65,8 @@
       <file leaf-file-name="survey-complete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/survey-complete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1420">
-              <caret line="243" column="38" lean-forward="false" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
+            <state relative-caret-position="398">
+              <caret line="243" column="38" lean-forward="true" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -57,8 +77,13 @@
       <file leaf-file-name="survey-3-radio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/survey-3-radio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4720">
-              <caret line="236" column="26" lean-forward="false" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
+<<<<<<< HEAD
+            <state relative-caret-position="1326">
+              <caret line="250" column="54" lean-forward="false" selection-start-line="250" selection-start-column="48" selection-end-line="250" selection-end-column="54" />
+=======
+            <state relative-caret-position="334">
+              <caret line="236" column="26" lean-forward="true" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
               <folding>
                 <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -69,8 +94,56 @@
       <file leaf-file-name="survey-1-radio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/survey-1-radio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="237" column="49" lean-forward="false" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
+<<<<<<< HEAD
+            <state relative-caret-position="612">
+              <caret line="248" column="34" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="248" selection-end-column="34" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tablesaw.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/tablesaw.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="755" column="0" lean-forward="false" selection-start-line="755" selection-start-column="0" selection-end-line="755" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="survey-detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/survey-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="255" column="24" lean-forward="false" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="survey-2-checkbox.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/survey-2-checkbox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="230" column="47" lean-forward="false" selection-start-line="230" selection-start-column="47" selection-end-line="230" selection-end-column="47" />
+=======
+            <state relative-caret-position="522">
+              <caret line="237" column="49" lean-forward="true" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -170,16 +243,19 @@
         <option value="$PROJECT_DIR$/survey-2-checkbox.html" />
         <option value="$PROJECT_DIR$/survey-list.html" />
         <option value="$PROJECT_DIR$/scss/_variables.scss" />
-        <option value="$PROJECT_DIR$/survey-detail.html" />
         <option value="$PROJECT_DIR$/survey-3-radio.html" />
         <option value="$PROJECT_DIR$/survey-6-matrix.html" />
         <option value="$PROJECT_DIR$/css/tablesaw.css" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/survey-detail.html" />
+=======
         <option value="$PROJECT_DIR$/survey-5-drag.html" />
         <option value="$PROJECT_DIR$/js/thanhntp.js" />
         <option value="$PROJECT_DIR$/survey-4-slide.html" />
         <option value="$PROJECT_DIR$/survey-1-radio.html" />
         <option value="$PROJECT_DIR$/survey-complete.html" />
         <option value="$PROJECT_DIR$/scss/_survey.scss" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
       </list>
     </option>
   </component>
@@ -211,7 +287,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,7 +306,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,14 +467,22 @@
       <workItem from="1512577900211" duration="7517000" />
       <workItem from="1512607800356" duration="1552000" />
       <workItem from="1512654005529" duration="11630000" />
+<<<<<<< HEAD
+      <workItem from="1512692021730" duration="4053000" />
+      <workItem from="1512950857570" duration="286000" />
+=======
       <workItem from="1512692021730" duration="3896000" />
       <workItem from="1512700218517" duration="7918000" />
-      <workItem from="1512966124563" duration="420000" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241935000" />
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="234040000" />
+=======
+    <option name="totallyTimeSpent" value="241515000" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -664,11 +755,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="680">
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-8-answer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="287" column="0" lean-forward="true" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="231" column="33" lean-forward="true" selection-start-line="231" selection-start-column="33" selection-end-line="231" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-10-video.html">
+=======
         <state relative-caret-position="120">
           <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
           <folding>
@@ -681,13 +795,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="761" column="36" lean-forward="false" selection-start-line="761" selection-start-column="36" selection-end-line="761" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-5-drag.html">
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="247" column="57" lean-forward="false" selection-start-line="247" selection-start-column="48" selection-end-line="247" selection-end-column="57" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -695,6 +815,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="250" column="54" lean-forward="false" selection-start-line="250" selection-start-column="48" selection-end-line="250" selection-end-column="54" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,30 +825,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="315" column="45" lean-forward="false" selection-start-line="315" selection-start-column="45" selection-end-line="315" selection-end-column="45" />
+          <folding>
+            <element signature="e#8243#8636#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-4-slide.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1156">
+          <caret line="280" column="63" lean-forward="false" selection-start-line="280" selection-start-column="63" selection-end-line="280" selection-end-column="63" />
+=======
         <state relative-caret-position="629">
           <caret line="240" column="50" lean-forward="false" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="50" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-3-radio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4720">
-          <caret line="236" column="26" lean-forward="false" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="334">
+          <caret line="236" column="26" lean-forward="true" selection-start-line="231" selection-start-column="20" selection-end-line="236" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-1-radio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="237" column="49" lean-forward="false" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
+<<<<<<< HEAD
+        <state relative-caret-position="612">
+          <caret line="248" column="34" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="248" selection-end-column="34" />
+=======
+        <state relative-caret-position="522">
+          <caret line="237" column="49" lean-forward="true" selection-start-line="237" selection-start-column="49" selection-end-line="237" selection-end-column="64" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -734,8 +881,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/survey-complete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1420">
-          <caret line="243" column="38" lean-forward="false" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
+<<<<<<< HEAD
+        <state relative-caret-position="1326">
+          <caret line="250" column="54" lean-forward="false" selection-start-line="250" selection-start-column="48" selection-end-line="250" selection-end-column="54" />
+=======
+        <state relative-caret-position="398">
+          <caret line="243" column="38" lean-forward="true" selection-start-line="243" selection-start-column="38" selection-end-line="243" selection-end-column="47" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -744,8 +896,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/_survey.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="619" column="20" lean-forward="false" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
+<<<<<<< HEAD
+        <state relative-caret-position="2380">
+          <caret line="462" column="5" lean-forward="false" selection-start-line="462" selection-start-column="5" selection-end-line="462" selection-end-column="5" />
+=======
+        <state relative-caret-position="681">
+          <caret line="619" column="20" lean-forward="true" selection-start-line="619" selection-start-column="20" selection-end-line="619" selection-end-column="20" />
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
           <folding>
             <element signature="e#140#1224#0" expanded="false" />
             <element signature="e#1862#2043#0" expanded="false" />
@@ -767,5 +924,24 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/css/tablesaw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="755" column="0" lean-forward="false" selection-start-line="755" selection-start-column="0" selection-end-line="755" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="255" column="24" lean-forward="false" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 7e858f6b154d91da4888a05dca11e3220339d6ff
   </component>
 </project>
