@@ -269,7 +269,7 @@ $(document).ready(function () {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
 
-            reader.onload = function(e) {
+            reader.onload = function (e) {
                 $('#image-upload-avatar').attr('src', e.target.result);
 
                 $('#image-upload-avatar').hide();
@@ -281,14 +281,21 @@ $(document).ready(function () {
         }
     }
 
-    $("#btn-upload-avatar").change(function() {
+    $("#btn-upload-avatar").change(function () {
         readURL(this);
     });
 
     /*List questions collapse*/
 
     $(".group-questions .item-question .question-content").click(function () {
-        $(this).closest('.item-question').toggleClass('active');
+        var currentQuestion = $(this).closest('.item-question');
+        if (currentQuestion.hasClass("active")) {
+            currentQuestion.removeClass('active');
+            console.log('has active')
+        }else {
+            currentQuestion.siblings('.item-question').removeClass('active');
+            currentQuestion.addClass('active');
+        }
     })
 
     $(".group-questions .item-question .list-answers .item-radio").click(function () {
@@ -299,22 +306,26 @@ $(document).ready(function () {
     })
 
     /*drag & drop answer*/
-    $( ".item-drag" ).draggable();
 
-    $( ".item-drop" ).droppable({
-        accept: ".item-drag",
-        drop: function( event, ui ) {
+    $(".item-drag").draggable({
+        revert: 'invalid'
+    });
+    $(".item-wrapper").droppable({
+        accept: function (item) {
+            return $(this).find(".item-drag").length == 0;
+        },
+        drop: function (event, ui) {
             var droppable = $(this);
             var draggable = ui.draggable;
             // Move draggable into droppable
             draggable.appendTo(droppable);
-            draggable.css({top: '-1px', left: '-1px', right: '-1px'});
+            draggable.css({top: '0', left: '0', right: '0', bottom: '0'});
         }
     });
-
-    if($('#slide-question-items').length > 0){
+    if ($('#slide-question-items').length > 0) {
         $('#slide-question-items').bxSlider({
-            pagerType: 'short'
+            pagerType: 'short',
+            infiniteLoop: false
         });
     }
 })

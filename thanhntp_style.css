@@ -3410,7 +3410,7 @@ html {
         top: 14px;
         left: -2px; }
       .list-messages .item-message .item-info .title {
-        font-weight: 400;
+        font-weight: 600;
         white-space: nowrap;
         line-height: 1.4;
         height: 1.4em;
@@ -4844,6 +4844,13 @@ html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(246, 246, 246, 0.25) 0%, rgba(0, 0, 0, 0.75) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
     z-index: 1; }
+  .list-survey .item-survey .item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
   .list-survey .item-survey .type-survey {
     background-color: #f00000;
     color: #ffffff;
@@ -5068,8 +5075,16 @@ html {
 .group-questions .item-question.active .list-answers {
   max-height: 1000px; }
 
-.list-drag .item-drag, .list-drag .item-drop {
+.list-drag .item-wrapper {
   height: 130px;
+  margin-bottom: 10px;
+  position: relative; }
+.list-drag .item-drag, .list-drag .item-drop {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5082,25 +5097,23 @@ html {
   font-weight: bold;
   border-radius: 10px;
   font-size: 24px;
-  margin-bottom: 10px; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 .list-drag .item-drag {
   border: 1px solid #005f9e;
   background-color: #005f9e;
   color: #fff; }
 .list-drag .item-drop {
   border: 1px dashed #005f9e;
-  color: #005f9e;
-  position: relative; }
-  .list-drag .item-drop .item-drag {
-    margin: 0;
-    position: absolute !important; }
+  color: #005f9e; }
 @media screen and (max-width: 768px) {
   .list-drag .row {
     margin: -5px; }
     .list-drag .row .col-xs-6 {
       padding: 0 5px; }
+  .list-drag .item-wrapper {
+    height: 65px; }
   .list-drag .item-drag, .list-drag .item-drop {
-    height: 65px;
     font-size: 18px;
     border-radius: 6px; } }
 
@@ -5143,7 +5156,8 @@ video {
   margin: 0; }
   .item-checkbox label img, .item-radio label img {
     width: 100%;
-    display: inline-block; }
+    display: inline-block;
+    height: 182px; }
 .item-checkbox .status, .item-radio .status {
   width: 17px;
   height: 17px;
@@ -5166,6 +5180,20 @@ video {
   color: #6f6f6f;
   padding: 5px;
   width: calc(100% - 25px - 17px - 30px); }
+.item-checkbox .input-wrapper, .item-radio .input-wrapper {
+  font-size: 14px;
+  width: calc(100% - 50px); }
+.item-checkbox textarea, .item-radio textarea {
+  height: 31px;
+  line-height: 19px;
+  border: 1px solid #005f9e;
+  border-radius: 4px;
+  resize: none;
+  font-weight: 400;
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  padding: 5px; }
 .item-checkbox input, .item-radio input {
   display: none; }
   .item-checkbox input:checked + label, .item-radio input:checked + label {
@@ -5176,6 +5204,8 @@ video {
       font-size: 20px;
       margin-top: -4px;
       margin-left: -2px; }
+    .item-checkbox input:checked + label .input-wrapper textarea, .item-radio input:checked + label .input-wrapper textarea {
+      pointer-events: initial; }
 @media screen and (max-width: 480px) {
   .item-checkbox, .item-radio {
     margin-bottom: 6px !important; }
@@ -5186,6 +5216,11 @@ video {
       width: 15px;
       height: 15px;
       margin: 5px 10px 5px 5px; } }
+
+.list-small {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .item-radio .status {
   border-radius: 50%; }
@@ -5334,5 +5369,19 @@ video {
           font-size: 30px; }
         .survey-completed .point > .text-primary {
           font-size: 30px; } }
+
+.tablesaw-advance a.tablesaw-nav-btn {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px; }
+  .tablesaw-advance a.tablesaw-nav-btn:before {
+    top: 50% !important;
+    margin-top: -5px; }
+  .tablesaw-advance a.tablesaw-nav-btn.right:before {
+    left: 50% !important;
+    margin-left: -2.5px; }
+  .tablesaw-advance a.tablesaw-nav-btn.left:before {
+    left: 50% !important;
+    margin-left: -3px; }
 
 /*# sourceMappingURL=thanhntp_style.css.map */
