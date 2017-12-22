@@ -430,7 +430,7 @@ html {
   min-height: 100%;
   padding: 0 10px;
   width: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   z-index: -1;
   -webkit-transition: background 0.5s, z-index 2s;
   transition: background 0.5s, z-index 2s; }
@@ -2030,7 +2030,7 @@ html {
   width: 0;
   height: 0;
   z-index: -1;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   -webkit-transition: background 0.5s 0.75s, z-index 0.75s, width 0s 0.75s, height 0s 0.5s;
   transition: background 0.5s 0.75s, z-index 0.75s, width 0s 0.75s, height 0s 0.5s; }
 .menu-mobile-wrapper .social {
@@ -2621,8 +2621,8 @@ html {
       /* safari5.1+,chrome10+ */
       /* opera 11.10+ */
       /* ie10+ */
-      background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-      background: linear-gradient(0deg, black 0%, transparent 100%);
+      background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       /* w3c */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
       /* ie6-9 */
@@ -2700,8 +2700,8 @@ html {
       /* safari5.1+,chrome10+ */
       /* opera 11.10+ */
       /* ie10+ */
-      background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-      background: linear-gradient(0deg, black 0%, transparent 100%);
+      background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       /* w3c */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
       /* ie6-9 */
@@ -2907,14 +2907,14 @@ html {
   #homepage-survey-slider .bx-prev {
     left: -3px;
     background-image: url("images/homepage_newstab_prev-dark.png");
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-position: left center;
     display: block;
     opacity: 1; }
   #homepage-survey-slider .bx-next {
     right: -3px;
     background-image: url("images/homepage_newstab_next-dark.png");
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-position: right center;
     display: block;
     opacity: 1; } }
@@ -5154,10 +5154,22 @@ video {
   padding: 15px;
   overflow: hidden;
   margin: 0; }
-  .item-checkbox label img, .item-radio label img {
+  .item-checkbox label .image-wrapper, .item-radio label .image-wrapper {
+    background: #fafafa;
     width: 100%;
-    display: inline-block;
-    height: 182px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 182px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .item-checkbox label .image-wrapper img, .item-radio label .image-wrapper img {
+      max-width: 100%;
+      max-height: 100%; }
 .item-checkbox .status, .item-radio .status {
   width: 17px;
   height: 17px;
@@ -5183,8 +5195,13 @@ video {
 .item-checkbox .input-wrapper, .item-radio .input-wrapper {
   font-size: 14px;
   width: calc(100% - 50px); }
-.item-checkbox textarea, .item-radio textarea {
-  height: 31px;
+.item-checkbox.input-text-radio .content, .input-text-radio.item-radio .content {
+  width: calc(100% - 45px); }
+  .item-checkbox.input-text-radio .content > span, .input-text-radio.item-radio .content > span {
+    display: inline-block; }
+.item-checkbox.input-text-radio .input-wrapper, .input-text-radio.item-radio .input-wrapper {
+  width: 100%; }
+.item-checkbox.input-text-radio textarea, .input-text-radio.item-radio textarea {
   line-height: 19px;
   border: 1px solid #005f9e;
   border-radius: 4px;

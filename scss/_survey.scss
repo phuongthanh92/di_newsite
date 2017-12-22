@@ -389,10 +389,17 @@ video {
     padding: 15px;
     overflow: hidden;
     margin: 0;
-    img {
+    .image-wrapper {
+      background: #fafafa;
       width: 100%;
-      display: inline-block;
+      display: flex;
+      align-items: center;
       height: 182px;
+      justify-content: center;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
   }
   .status {
@@ -424,17 +431,27 @@ video {
     font-size:14px;
     width: calc(100% - 50px);;
   }
-  textarea{
-    height: 31px;
-    line-height: 19px;
-    border: 1px solid #005f9e;
-    border-radius:4px;
-    resize: none;
-    font-weight: 400;
-    width: 100%;
-    display: block;
-    pointer-events: none;
-    padding: 5px;
+  &.input-text-radio{
+    .content {
+      width: calc(100% - 45px);
+      > span{
+        display: inline-block;
+      }
+    }
+    .input-wrapper{
+      width: 100%;
+    }
+    textarea{
+      line-height: 19px;
+      border: 1px solid #005f9e;
+      border-radius:4px;
+      resize: none;
+      font-weight: 400;
+      width: 100%;
+      display: block;
+      pointer-events: none;
+      padding: 5px;
+    }
   }
   input {
     display: none;
