@@ -285,6 +285,19 @@ $(document).ready(function () {
         readURL(this);
     });
 
+    /*upload image feedback*/
+    $("#upload-file-feedback").on('change', function () {
+        var currentURL = $(this).val();
+        var appendItem = '<div class="upload-file-name"> <span>' + currentURL +'</span> <i class="fa fa-close"></i> </div>'
+        $('#result-upload-list').append(appendItem);
+        $('#result-upload-list .upload-file-name i').click(function () {
+            $(this).closest('.upload-file-name').remove();
+        })
+    })
+
+    $('#result-upload-list .upload-file-name i').click(function () {
+        $(this).closest('.upload-file-name').remove();
+    })
     /*List questions collapse*/
 
     $(".group-questions .item-question .question-content").click(function () {
