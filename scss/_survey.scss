@@ -112,7 +112,7 @@
         float: left;
       }
       .point {
-        font-size: 22px;
+        font-size: 19px;
       }
     }
   }
@@ -556,6 +556,10 @@ video {
 
     }
   }
+}
+
+.tablesaw-swipe th{
+  min-width: 80px;
 }
 
 .draggable {

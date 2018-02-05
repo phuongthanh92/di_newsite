@@ -341,6 +341,20 @@ $(document).ready(function () {
             infiniteLoop: false
         });
     }
+    /* daily gift*/
+    $(".list-received .item-daily .action  a").click(function () {
+        $(this).closest('.list-received').addClass('hide-daily');
+        $('.daily-gift-point').addClass('show');
+        setTimeout(function () {
+            $('.daily-gift-point').removeClass('show')
+        }, 3000)
+    })
+    $(".daily-reward-btn").click(function () {
+        $('.daily-gift-point').addClass('show');
+        setTimeout(function () {
+            $('.daily-gift-point').removeClass('show')
+        }, 3000)
+    })
 })
 
 function copyToClipboard(elementId) {
